@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const Button = () => {
   return (
-    <button className="bg-orange-200 text-orange-500 text-xl font-semibold px-6 py-3 rounded-lg hover:bg-orange-300 active:bg-orange-200 active:scale-95 transition duration-300">
+    <button className="rounded-lg bg-orange-200 px-6 py-3 text-xl font-semibold text-orange-500 transition duration-300 hover:bg-orange-300 active:scale-95 active:bg-orange-200">
       Hey, What's up
     </button>
   );

@@ -1,8 +1,8 @@
 module.exports = {
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
-  darkMode: "class",
+  content: ['./pages/**/*.{js,jsx}', './components/**/*.{js,jsx}'],
+  darkMode: 'class',
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('prettier-plugin-tailwindcss')],
 };
