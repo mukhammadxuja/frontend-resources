@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 
-import Button from "@/components/button/index";
+import Button from "components/button/index";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
