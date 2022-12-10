@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #ffc0cb;
+    --color-secondary: #a020f0;
+
+    --color-more-purple: #8975f0;
+    --color-less-purple: #cdb4eb;
+    --color-cyan: #4cc4e6;
+  }
+
+  body {
+    font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+      Noto Color Emoji;
+  }
+
+  span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 700ms linear;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  /* Gradient text animation */
+  .animation_gradient_text {
+    background: linear-gradient(
+      -45deg,
+      #8975f0,
+      #cdb4eb,
+      #4cc4e6,
+      #8975f0,
+      #cdb4eb,
+      #4cc4e6
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+  }
+
+  .animation_gradient_text_colorful {
+    background: linear-gradient(-45deg, #ff6f69, #ffcc5c, #88d8b0, #8b9dc3);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 8s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+  }
+
+  @keyframes animated_text {
+    0% {
+      background-position: 0px 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0px 50%;
+    }
+  }
+}
