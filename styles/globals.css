@@ -53,16 +53,6 @@
     -webkit-animation: animated_text 10s ease-in-out infinite;
   }
 
-  .animation_gradient_text_colorful {
-    background: linear-gradient(-45deg, #ff6f69, #ffcc5c, #88d8b0, #8b9dc3);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animated_text 8s ease-in-out infinite;
-    -moz-animation: animated_text 10s ease-in-out infinite;
-    -webkit-animation: animated_text 10s ease-in-out infinite;
-  }
-
   @keyframes animated_text {
     0% {
       background-position: 0px 50%;

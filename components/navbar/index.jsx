@@ -13,7 +13,7 @@ const Navbar = () => {
           </span>
         </div>
         <a
-          href="http://"
+          href="https://github.com/mukhammadxuja/frontend-resources"
           target="_blank"
           rel="noopener noreferrer"
           className="flex cursor-pointer items-center space-x-1 rounded-md py-1 px-2 duration-200 hover:bg-gray-50"

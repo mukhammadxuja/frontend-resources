@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 
-import { Header, Menu } from 'components';
+import { Header, Menu, Cards } from 'components';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -11,7 +11,6 @@ export default function Home() {
   const router = useRouter();
   const { locale } = router;
 
-  // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
@@ -25,13 +24,17 @@ export default function Home() {
       <main className="mt-16">
         <Header />
         <Menu />
+        <Cards />
       </main>
-      {/* <h1 className="text-3xl font-bold underline">{locale}</h1>
-      <h1>The current theme is: {theme}</h1>
-      <div className="flex items-center space-x-4">
-        <button onClick={() => setTheme('light')}>Light Mode</button>
-        <button onClick={() => setTheme('dark')}>Dark Mode</button>
-      </div> */}
     </div>
   );
+}
+
+{
+  /* <h1 className="text-3xl font-bold underline">{locale}</h1>
+<h1>The current theme is: {theme}</h1>
+<div className="flex items-center space-x-4">
+  <button onClick={() => setTheme('light')}>Light Mode</button>
+  <button onClick={() => setTheme('dark')}>Dark Mode</button>
+</div> */
 }

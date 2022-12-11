@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="container mx-auto mt-44 flex flex-col items-center justify-center py-10">
       <div className="space-y-4">
-        <h1 className="mx-auto w-fit text-5xl font-bold">
+        <h1 className="mx-auto w-fit text-5xl font-bold text-slate-700">
           Find Everything About Frontend.
         </h1>
         <h1 className="animation_gradient_text mx-auto w-fit text-5xl font-bold text-transparent">

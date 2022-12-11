@@ -18,6 +18,7 @@ const Menu = () => {
         <div className="flex items-center justify-center space-x-2">
           <RoundedButton title="Icons" />
           <RoundedButton title="Fonts" />
+          <RoundedButton title="Design" />
           <RoundedButton title="Templates" />
           <RoundedButton title="Photos" />
         </div>
