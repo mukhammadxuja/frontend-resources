@@ -20,9 +20,11 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "autoprefixer": "^10.4.7",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
+    "framer-motion": "^7.6.19",
     "next-i18next": "^11.0.0",
     "next-themes": "^0.2.0",
     "postcss": "^8.4.14",
