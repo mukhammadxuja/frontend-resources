@@ -7,7 +7,7 @@ export const useCardContext = () => {
 };
 
 export const CardContextProvider = ({ children }) => {
-  const [cardTag, setCardTag] = useState('Tools');
+  const [cardTag, setCardTag] = useState('');
   const [hashTag, setHashTag] = useState('');
 
   const contextValue = {
