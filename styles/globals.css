@@ -38,16 +38,31 @@
     }
   }
 
+  .gradient_text {
+    background: linear-gradient(
+      -45deg,
+      #ffca60,
+      #ff74a4,
+      #8975f0,
+      #ffca60,
+      #ff74a4,
+      #8975f0
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   /* Gradient text animation */
   .animation_gradient_text {
     background: linear-gradient(
       -45deg,
       #8975f0,
-      #cdb4eb,
-      #4cc4e6,
+      #ff74a4,
+      #ffca60,
       #8975f0,
-      #cdb4eb,
-      #4cc4e6
+      #ff74a4,
+      #ffca60
     );
     background-size: 300%;
     -webkit-background-clip: text;

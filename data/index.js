@@ -728,7 +728,7 @@ export const data = [
     },
   },
   {
-    id: 3.10,
+    id: 3.1,
     name: 'Dark Mode Design',
     image: '/images/ideas/dark-mode.jpeg',
     tag: 'Ideas',
@@ -772,6 +772,111 @@ export const data = [
       tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
     },
     hashtags: ['not-popular'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // ------------- Read --------------- //
+
+  {
+    id: 4.1,
+    name: 'Medium',
+    image: '/images/read/medium.svg',
+    tag: 'Read',
+    description:
+      'Medium is where those ideas take shape, take off, and spark powerful conversations.',
+    link: 'https://medium.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['blog', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 4.2,
+    name: 'Dev.to',
+    image: '/images/read/dev-to.svg',
+    tag: 'Read',
+    description:
+      'DEV (dev.to) is one of the largest online communities of software developers.',
+    link: 'https://dev.to/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['blog', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 4.3,
+    name: 'HubPages',
+    image: '/images/read/hub-pages.webp',
+    tag: 'Read',
+    description:
+      'HubPages is a unique publishing platform and community of writers and readers.',
+    link: 'https://discover.hubpages.com/technology/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['blog'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 4.4,
+    name: 'Vocal Media',
+    image: '/images/read/vocal-media.webp',
+    tag: 'Read',
+    description:
+      'Vocal is an all-in-one platform where you can share your stories, build an audience, and earn money.',
+    link: 'https://vocal.media/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['blog'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 4.5,
+    name: 'LogRocket',
+    image: '/images/read/log-rocket.png',
+    tag: 'Read',
+    description:
+      'LogRocket helps you understand problems affecting your users, so that you can get back to building great software.',
+    link: 'https://blog.logrocket.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['blog'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 4.6,
+    name: 'Beam Start',
+    image: '/images/read/beam-start.png',
+    tag: 'Read',
+    description:
+      'BEAMSTART brings you the latest news, database, and jobs from all around the world on startups, technology, and business.',
+    link: 'https://beamstart.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['blog'],
     trend: {
       like: 0,
       favorite: false,

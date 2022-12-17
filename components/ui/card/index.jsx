@@ -25,7 +25,7 @@ const Card = (props) => {
       key={index}
       className={
         tag === cardTag
-          ? `group w-full space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:space-y-5 lg:p-5`
+          ? `group w-full space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:space-y-5 lg:p-5`
           : 'hidden'
       }
     >
@@ -67,7 +67,7 @@ const Card = (props) => {
         </div>
       </div>
       <div className="space-y-2">
-        <h1 className="text-lg font-bold text-gray-800 duration-200 line-clamp-2 md:text-lg lg:font-extrabold">
+        <h1 className="text-lg font-bold text-gray-800 line-clamp-2 md:text-lg lg:font-extrabold">
           {description}
         </h1>
         <div className="flex items-center space-x-2">
