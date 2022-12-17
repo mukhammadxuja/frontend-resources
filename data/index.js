@@ -1,7 +1,97 @@
 export const data = [
+  // ------------- Recommended --------------- //
+  {
+    id: 0.1,
+    name: 'Typescript',
+    image: '/images/tools/typescript.svg',
+    tag: 'Recommended',
+    description:
+      'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
+    link: 'https://www.typescriptlang.org/',
+    colors: {
+      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      borderColor: 'hover:border-green-500',
+    },
+    hashtags: ['tools', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 0.2,
+    name: 'React.js',
+    image: '/images/tools/react-js.svg',
+    tag: 'Recommended',
+    description: 'React is a JavaScript library for building user interfaces.',
+    link: 'https://reactjs.org/',
+    colors: {
+      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      borderColor: 'hover:border-green-500',
+    },
+    hashtags: ['tools', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 0.3,
+    name: 'Next.js',
+    image: '/images/tools/next-js.svg',
+    tag: 'Recommended',
+    description:
+      'Next.js is a React framework that gives you building blocks to create web applications.',
+    link: 'https://nextjs.org/',
+    colors: {
+      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      borderColor: 'hover:border-green-500',
+    },
+    hashtags: ['tools', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 0.4,
+    name: 'Tailwind Css',
+    image: '/images/style/tailwind-css.svg',
+    tag: 'Recommended',
+    description:
+      'Tailwind CSS makes it quicker to write and maintain the code of your application.',
+    link: 'https://tailwindcss.com/',
+    colors: {
+      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+    },
+    hashtags: ['framework', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 1.12,
+    name: 'Vscode',
+    image: '/images/tools/vscode.svg',
+    tag: 'Recommended',
+    description:
+      'Visual Studio Code is a free coding editor that helps you start coding quickly.',
+    link: 'https://code.visualstudio.com/',
+    colors: {
+      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      borderColor: 'hover:border-green-500',
+    },
+    hashtags: ['popular', 'tools'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+
   // ------------- Tools --------------- //
   {
-    id: 1,
+    id: 1.1,
     name: 'React.js',
     image: '/images/tools/react-js.svg',
     tag: 'Tools',
@@ -18,7 +108,7 @@ export const data = [
     },
   },
   {
-    id: 2,
+    id: 1.2,
     name: 'Vue.js',
     image: '/images/tools/vue-js.png',
     tag: 'Tools',
@@ -35,7 +125,7 @@ export const data = [
     },
   },
   {
-    id: 3,
+    id: 1.3,
     name: 'Angular',
     image: '/images/tools/angular-js.png',
     tag: 'Tools',
@@ -52,7 +142,7 @@ export const data = [
     },
   },
   {
-    id: 4,
+    id: 1.4,
     name: 'Svelte.js',
     image: '/images/tools/svelte-js.png',
     tag: 'Tools',
@@ -70,7 +160,7 @@ export const data = [
     },
   },
   {
-    id: 5,
+    id: 1.5,
     name: 'Next.js',
     image: '/images/tools/next-js.svg',
     tag: 'Tools',
@@ -88,7 +178,7 @@ export const data = [
     },
   },
   {
-    id: 6,
+    id: 1.6,
     name: 'Gatsby.js',
     image: '/images/tools/gatsby-js.svg',
     tag: 'Tools',
@@ -106,7 +196,7 @@ export const data = [
     },
   },
   {
-    id: 7,
+    id: 1.7,
     name: 'Javascript',
     image: '/images/tools/javascript.svg',
     tag: 'Tools',
@@ -123,7 +213,7 @@ export const data = [
     },
   },
   {
-    id: 8,
+    id: 1.8,
     name: 'Typescript',
     image: '/images/tools/typescript.svg',
     tag: 'Tools',
@@ -141,7 +231,7 @@ export const data = [
     },
   },
   {
-    id: 9,
+    id: 1.9,
     name: 'Css',
     image: '/images/tools/css.svg',
     tag: 'Tools',
@@ -159,7 +249,7 @@ export const data = [
     },
   },
   {
-    id: 10,
+    id: 1.1,
     name: 'Chrome',
     image: '/images/tools/chrome.svg',
     tag: 'Tools',
@@ -177,7 +267,7 @@ export const data = [
     },
   },
   {
-    id: 11,
+    id: 1.11,
     name: 'Notion',
     image: '/images/tools/notion.svg',
     tag: 'Tools',
@@ -195,7 +285,7 @@ export const data = [
     },
   },
   {
-    id: 12,
+    id: 1.12,
     name: 'Vscode',
     image: '/images/tools/vscode.svg',
     tag: 'Tools',
@@ -213,7 +303,7 @@ export const data = [
     },
   },
   {
-    id: 13,
+    id: 1.13,
     name: 'Spotify',
     image: '/images/tools/spotify.svg',
     tag: 'Tools',
@@ -231,7 +321,7 @@ export const data = [
     },
   },
   {
-    id: 14,
+    id: 1.14,
     name: 'Notion',
     image: '/images/tools/notion.svg',
     tag: 'Tools',
@@ -481,6 +571,207 @@ export const data = [
       tagColors: 'bg-orange-200 text-orange-500 hover:bg-orange-100',
     },
     hashtags: ['generator', 'tools'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // ------------- Ideas --------------- //
+
+  {
+    id: 3.1,
+    name: 'Pinterest',
+    image: '/images/ideas/pinterest.svg',
+    tag: 'Ideas',
+    description:
+      'Discover recipes, home ideas, style inspiration and other ideas to try.',
+    link: 'https://www.pinterest.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 3.2,
+    name: 'Dribbble',
+    image: '/images/ideas/dribbble.svg',
+    tag: 'Ideas',
+    description: 'Online community for showcasing user artwork.',
+    link: 'https://dribbble.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 3.3,
+    name: 'Behance',
+    image: '/images/ideas/behance.svg',
+    tag: 'Ideas',
+    description:
+      'Behance is the world`s largest creative network for showcasing and discovering creative work.',
+    link: 'https://dribbble.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 3.4,
+    name: 'Awwwards',
+    image: '/images/ideas/awwwwards.svg',
+    tag: 'Ideas',
+    description:
+      'Behance is the world`s largest creative network for showcasing and discovering creative work.',
+    link: 'https://dribbble.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 3.5,
+    name: 'Muzli',
+    image: '/images/ideas/muzli.png',
+    tag: 'Ideas',
+    description: 'All the design inspiration you need. Served fresh.',
+    link: 'https://muz.li/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 3.6,
+    name: 'Mobbin',
+    image: '/images/ideas/mobbin.gif',
+    tag: 'Ideas',
+    description: 'Latest mobile design patterns.',
+    link: 'https://mobbin.com/browse/web/apps',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 3.7,
+    name: 'Page Collective',
+    image: '/images/ideas/page-collective.svg',
+    tag: 'Ideas',
+    description: 'A lot of design ui example.',
+    link: 'https://pagecollective.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['not-popular'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 3.8,
+    name: 'Nicely Done',
+    image: '/images/ideas/nicely-done.png',
+    tag: 'Ideas',
+    description: 'Products & pattern designs inspiration',
+    link: 'https://nicelydone.club/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['not-popular'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 3.9,
+    name: 'Collect Ui',
+    image: '/images/ideas/collect-ui.png',
+    tag: 'Ideas',
+    description:
+      'Daily inspiration collected from daily ui archive and beyond.',
+    link: 'https://collectui.com/designs',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['not-popular', 'ui'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 3.10,
+    name: 'Dark Mode Design',
+    image: '/images/ideas/dark-mode.jpeg',
+    tag: 'Ideas',
+    description: 'Showcasing the most beautifully designed dark mode websites',
+    link: 'https://www.darkmodedesign.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['not-popular', 'ui'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 3.11,
+    name: 'Designspiration',
+    image: '/images/ideas/designspiration.jpg',
+    tag: 'Ideas',
+    description:
+      'The arrangement of lines or forms which make up the plan of act with special regards to the proportions, structures, moment and beauty of the work',
+    link: 'https://www.designspiration.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['not-popular'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 3.12,
+    name: 'We Heart It',
+    image: '/images/ideas/we-love-it.webp',
+    tag: 'Ideas',
+    description:
+      'Discover photos, videos and articles from friends that share your passion for beauty, fashion, photography, travel, music, wallpapers and more.',
+    link: 'https://weheartit.com/',
+    colors: {
+      tagColors: 'bg-sky-200 text-sky-500 hover:bg-sky-100',
+    },
+    hashtags: ['not-popular'],
     trend: {
       like: 0,
       favorite: false,

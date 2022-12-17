@@ -8,12 +8,12 @@ const RoundedButton = ({ title }) => {
 
 const Header = () => {
   return (
-    <header className="container mx-auto mt-44 flex flex-col items-center justify-center py-10">
-      <div className="space-y-4">
-        <h1 className="mx-auto w-fit text-5xl font-bold text-slate-700">
+    <header className="container mx-auto mt-20 flex flex-col md:mt-32 md:items-center md:justify-center md:py-10 lg:mt-44">
+      <div className="space-y-2 lg:space-y-4">
+        <h1 className="text-3xl font-bold w-fit text-slate-700 md:mx-auto md:text-4xl lg:text-5xl">
           Find Everything About Frontend.
         </h1>
-        <h1 className="animation_gradient_text mx-auto w-fit text-5xl font-bold text-transparent">
+        <h1 className="animation_gradient_text text-3xl font-bold w-fit text-transparent md:mx-auto md:text-4xl lg:text-5xl">
           Frontend Resources.
         </h1>
       </div>

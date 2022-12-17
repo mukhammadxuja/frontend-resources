@@ -7,13 +7,16 @@ export const useCardContext = () => {
 };
 
 export const CardContextProvider = ({ children }) => {
-  const [cardTag, setCardTag] = useState('');
+  const [cardTag, setCardTag] = useState('Recommended');
   const [hashTag, setHashTag] = useState('');
+  const [like, setLike] = useState(false);
 
   const contextValue = {
     cardTag,
     hashTag,
+    like,
     setHashTag,
+    setLike,
     setCardTag,
   };
 

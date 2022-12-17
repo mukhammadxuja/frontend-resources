@@ -13,7 +13,7 @@ const Card = (props) => {
     trend,
     index,
   } = props;
-  const { cardTag } = useCardContext();
+  const { cardTag, like, setLike } = useCardContext();
 
   const tagColors = tag === cardTag ? `${colors.tagColors}` : '';
 
