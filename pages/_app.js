@@ -7,7 +7,7 @@ import Layout from 'components/layout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="system" enableSystem={true} attribute="class">
+    <ThemeProvider defaultTheme="light" enableSystem={true} attribute="class">
       <CardContextProvider>
         <Layout>
           <Component {...pageProps} />
