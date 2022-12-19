@@ -23,6 +23,7 @@ const Menu = () => {
         <RoundedButton setCardTag={setCardTag} title="Design" />
         <RoundedButton setCardTag={setCardTag} title="Templates" />
         <RoundedButton setCardTag={setCardTag} title="Photos" />
+        <RoundedButton setCardTag={setCardTag} link="/dashboard" title="More" />
       </div>
     </div>
   );
