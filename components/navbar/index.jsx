@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Link href="/">
-            <a className="text-lg font-bold md:text-2xl">Frontend Resources</a>
+            <a className="text-lg font-bold md:text-2xl whitespace-nowrap">Frontend Resources</a>
           </Link>
           <span className="text-purple300 mt-1 rounded-xl border border-slate-300 bg-slate-100 px-1 text-xs font-semibold md:px-1.5 md:text-sm">
             v1.0.0
