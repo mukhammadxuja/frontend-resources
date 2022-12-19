@@ -5,8 +5,8 @@ const Menu = () => {
   const { setCardTag } = useCardContext();
 
   return (
-    <div className="container mx-auto overflow-x-scroll scrollbar-hide">
-      <div className="mt-10 flex w-full items-center space-x-2 sm:max-w-7xl md:mx-auto md:mt-16 md:flex-wrap md:justify-center">
+    <div className="relative container mx-auto overflow-x-scroll scrollbar-hide">
+      <div className="flex w-full items-center space-x-2 sm:max-w-7xl md:mx-auto md:mt-16 md:flex-wrap md:justify-center">
         <RoundedButton setCardTag={setCardTag} title="Recommended" />
         <RoundedButton setCardTag={setCardTag} title="Tools" />
         <RoundedButton setCardTag={setCardTag} title="Style" />
