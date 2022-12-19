@@ -579,7 +579,7 @@ export const data = [
 
   // ------------- Ideas --------------- //
 
-  {
+  { 
     id: 3.1,
     name: 'Pinterest',
     image: '/images/ideas/pinterest.svg',
