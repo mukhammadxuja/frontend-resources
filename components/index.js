@@ -6,6 +6,7 @@ export { default as Footer } from './footer/index';
 export { default as Header } from './header/index';
 export { default as Menu } from './menu/index';
 export { default as Cards } from './cards/index';
+export { default as Sidebar } from './sidebar/index';
 
 // UI Components
 export { default as Button } from './ui/button/Button';
