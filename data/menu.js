@@ -1,11 +1,20 @@
 export const menu = [
   {
+    id: 0,
+    title: 'Recommended',
+    color: '#f44336',
+  },
+  {
     id: 1,
     title: 'API',
+    icon: 'TbApi',
+    color: '',
   },
   {
     id: 2,
-    title: 'Data Structures & Algorithms',
+    title: 'Algorithm',
+    icon: 'TbMathFunction',
+    color: '',
     subMenu: [
       {
         id: 2_1,
@@ -24,6 +33,8 @@ export const menu = [
   {
     id: 3,
     title: 'Design',
+    icon: 'IoIosColorFilter',
+    color: '',
     subMenu: [
       {
         id: 3_1,
@@ -67,22 +78,18 @@ export const menu = [
       },
       {
         id: 3_11,
-        title: 'Mockups',
-      },
-      {
-        id: 3_11,
         title: 'Responsive Design Tools',
       },
       {
-        id: 3_11,
+        id: 3_12,
         title: 'Tools',
       },
       {
-        id: 3_12,
+        id: 3_13,
         title: 'Typography',
       },
       {
-        id: 3_13,
+        id: 3_14,
         title: 'Design Websites',
       },
     ],
@@ -90,6 +97,8 @@ export const menu = [
   {
     id: 4,
     title: 'HTML',
+    icon: 'GrHtml5',
+    color: '',
     subMenu: [
       {
         id: 4_1,
@@ -120,6 +129,8 @@ export const menu = [
   {
     id: 5,
     title: 'CSS',
+    icon: 'RiCss3Line',
+    color: '',
     subMenu: [
       {
         id: 5_1,
@@ -154,6 +165,8 @@ export const menu = [
   {
     id: 6,
     title: 'Git & Github',
+    icon: 'BiGitBranch',
+    color: '',
     subMenu: [
       {
         id: 6_1,
@@ -180,6 +193,8 @@ export const menu = [
   {
     id: 7,
     title: 'Javascript',
+    icon: 'TbBrandJavascript',
+    color: '',
     subMenu: [
       {
         id: 7_1,
@@ -210,6 +225,8 @@ export const menu = [
   {
     id: 8,
     title: 'React',
+    icon: 'RiReactjsFill',
+    color: '',
     subMenu: [
       {
         id: 8_1,
@@ -234,27 +251,29 @@ export const menu = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     title: 'Vue',
+    icon: 'RiVuejsLine',
+    color: '',
     subMenu: [
       {
-        id: 10_1,
+        id: 9_1,
         title: 'Vue Articles',
       },
       {
-        id: 10_2,
+        id: 9_2,
         title: 'Vue Frameworks',
       },
       {
-        id: 10_3,
+        id: 9_3,
         title: 'Vue Hooks',
       },
       {
-        id: 10_4,
+        id: 9_4,
         title: 'Vue State Management',
       },
       {
-        id: 10_5,
+        id: 9_5,
         title: 'Vue Tools',
       },
     ],
@@ -262,6 +281,8 @@ export const menu = [
   {
     id: 10,
     title: 'Angular',
+    icon: 'SiAngularjs',
+    color: '',
     subMenu: [
       {
         id: 10_1,
@@ -288,6 +309,8 @@ export const menu = [
   {
     id: 11,
     title: 'Ideas',
+    icon: 'VscSymbolColor',
+    color: '',
     subMenu: [
       {
         id: 11_1,

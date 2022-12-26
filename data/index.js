@@ -579,7 +579,7 @@ export const data = [
 
   // ------------- Ideas --------------- //
 
-  { 
+  {
     id: 3.1,
     name: 'Pinterest',
     image: '/images/ideas/pinterest.svg',
@@ -882,4 +882,295 @@ export const data = [
       favorite: false,
     },
   },
+
+  // ------------- API --------------- //
+
+  {
+    id: 5.1,
+    name: 'Rapid API',
+    image: '/images/api/rapid-api.svg',
+    tag: 'API',
+    description: 'RapidAPI is the world`s largest API Marketplace.',
+    link: 'https://rapidapi.com/collection/list-of-free-apis',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['api', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 5.2,
+    name: 'Any API',
+    image: '/images/api/any-api.svg',
+    tag: 'API',
+    description: 'Documentation and Test Consoles for Over 1400 Public APIs.',
+    link: 'https://any-api.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['api'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 5.3,
+    name: '{JSON} Placeholder',
+    image: '/images/api/api.svg',
+    tag: 'API',
+    description: 'Free fake API for testing and prototyping.',
+    link: 'https://jsonplaceholder.typicode.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['api', 'fake api'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 5.4,
+    name: 'API List',
+    image: '/images/api/api-list.svg',
+    tag: 'API',
+    description: 'A collective list of APIs. Build.',
+    link: 'https://apilist.fun/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['api'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 5.5,
+    name: 'Public apis',
+    image: '/images/api/api.svg',
+    tag: 'API',
+    description: 'A collective list of free APIs.',
+    link: 'https://github.com/public-apis/public-apis',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['api'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 5.6,
+    name: 'Public apis',
+    image: '/images/api/api.svg',
+    tag: 'API',
+    description: '30 Free & Open APIs for Marketers & Content Developers',
+    link: 'https://blog.hubspot.com/website/free-open-apis',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['api', 'blog'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // ------------- Algorithm --------------- //
+
+  {
+    id: 6.1,
+    name: 'W3Schools',
+    image: '/images/algorithm/w3-schools.svg',
+    tag: 'Algorithm',
+    description:
+      'The first on the list is the series of blog articles at W3Schools, a popular free site to get started learning the concepts.',
+    link: 'https://www.w3schools.in/data-structures/intro',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 6.2,
+    name: 'GeeksforGeeks',
+    image: '/images/algorithm/geeks-for-geeks.svg',
+    tag: 'Algorithm',
+    description: 'Data Structures and Algorithms - Self Paced.',
+    link: 'https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=blog&utm_medium=collab_partnershipandalliances_victorialo&utm_campaign=dsa_us',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 6.3,
+    name: 'Freecodecamp',
+    image: '/images/tools/youtube.svg',
+    tag: 'Algorithm',
+    description:
+      'Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer.',
+    link: 'https://www.youtube.com/watch?v=RBSGKlAvoiM',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // --------- Algorithm Challenges ---------- //
+
+  {
+    id: 7.1,
+    name: 'CodeWars',
+    image: '/images/algorithm/code-wars.svg',
+    tag: 'Algorithm Challenges',
+    description:
+      'Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.',
+    link: 'https://www.codewars.com',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 7.2,
+    name: 'LeetCode',
+    image: '/images/algorithm/leetcode.svg',
+    tag: 'Algorithm Challenges',
+    description:
+      'LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.',
+    link: 'https://leetcode.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 7.3,
+    name: 'Coderbyte',
+    image: '/images/algorithm/coderbyte.webp',
+    tag: 'Algorithm Challenges',
+    description:
+      'The industry`s #1 website for technical interview prep, coding challenges, and expert videos.',
+    link: 'https://coderbyte.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 7.4,
+    name: 'HackerRank',
+    image: '/images/algorithm/hackerrank.svg',
+    tag: 'Algorithm Challenges',
+    description:
+      'We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.',
+    link: 'https://www.hackerrank.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 7.5,
+    name: 'Exercism',
+    image: '/images/algorithm/exercism.svg',
+    tag: 'Algorithm Challenges',
+    description:
+      'Develop fluency in 62 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.',
+    link: 'https://exercism.org/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 7.6,
+    name: 'CodeMonk',
+    image: '/images/algorithm/codemonk.svg',
+    tag: 'Algorithm Challenges',
+    description:
+      'Codemonk is a curated list of topics to help you improve your skills in the fundamental concepts of programming.',
+    link: 'https://www.hackerearth.com/practice/codemonk/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 7.7,
+    name: 'Edabit',
+    image: '/images/algorithm/edabit.webp',
+    tag: 'Algorithm Challenges',
+    description:
+      'Learn to code with 10,000+ interactive challenges. Gain XP, unlock achievements and level up. Our bite-sized challenges are a shortcut through the coding maze.',
+    link: 'https://edabit.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 7.8,
+    name: 'NeetCode',
+    image: '/images/algorithm/neetcode.png',
+    tag: 'Algorithm Challenges',
+    description:
+      'A better way to prepare for coding interviews.',
+    link: 'https://neetcode.io/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm challenges'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  }
 ];

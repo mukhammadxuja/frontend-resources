@@ -1,21 +1,25 @@
+import { useCardContext } from 'context/cardContext';
+
 const SubMenu = ({ menu, open }) => {
+  const { setCardTag, cardTag } = useCardContext();
   return (
     <>
       {menu.subMenu && (
-        <span>
+        <div className="ml-5 border-l-2 pl-4">
           {menu.subMenu.map((subMenu, index) => (
-            <a
+            <div
+              className={`${open === menu.id ? '' : 'hidden'} my-2`}
               key={index}
-              className={
-                open === menu.id
-                  ? 'flex scale-100 cursor-pointer flex-col'
-                  : 'hidden'
-              }
+              onClick={() => setCardTag(subMenu.title)}
             >
-              {subMenu.title}
-            </a>
+              <a
+                className={`cursor-pointer whitespace-nowrap rounded-lg text-lg font-semibold w-full text-gray-500 hover:bg-gray-100`}
+              >
+                {subMenu.title}
+              </a>
+            </div>
           ))}
-        </span>
+        </div>
       )}
     </>
   );

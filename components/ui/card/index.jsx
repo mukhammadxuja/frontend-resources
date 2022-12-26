@@ -61,9 +61,9 @@ const Card = (props) => {
             </svg>
           )}
 
-          <span className={`rounded-xl ${tagColors} px-4 py-1.5 font-semibold`}>
+          {/* <span className={`rounded-xl ${tagColors} px-4 py-1.5 font-semibold`}>
             {tag}
-          </span>
+          </span> */}
         </div>
       </div>
       <div className="space-y-2">
