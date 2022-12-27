@@ -1,7 +1,7 @@
 import { useCardContext } from 'context/cardContext';
 
 const SubMenu = ({ menu, open }) => {
-  const { setCardTag, cardTag } = useCardContext();
+  const { setCardTag } = useCardContext();
   return (
     <>
       {menu.subMenu && (
@@ -13,7 +13,7 @@ const SubMenu = ({ menu, open }) => {
               onClick={() => setCardTag(subMenu.title)}
             >
               <a
-                className={`cursor-pointer whitespace-nowrap rounded-lg text-lg font-semibold w-full text-gray-500 hover:bg-gray-100`}
+                className={`cursor-pointer whitespace-nowrap rounded-lg p-2 flex flex-grow text-lg font-semibold w-full text-gray-500 hover:bg-gray-100`}
               >
                 {subMenu.title}
               </a>

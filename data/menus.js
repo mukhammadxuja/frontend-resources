@@ -1,4 +1,4 @@
-export const menu = [
+export const menus = [
   {
     id: 0,
     title: 'Recommended',
@@ -38,7 +38,7 @@ export const menu = [
     subMenu: [
       {
         id: 3_1,
-        title: 'Design',
+        title: 'Ideas',
       },
       {
         id: 3_2,
@@ -87,11 +87,7 @@ export const menu = [
       {
         id: 3_13,
         title: 'Typography',
-      },
-      {
-        id: 3_14,
-        title: 'Design Websites',
-      },
+      }
     ],
   },
   {

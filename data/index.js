@@ -71,7 +71,7 @@ export const data = [
     },
   },
   {
-    id: 1.12,
+    id: 0.5,
     name: 'Vscode',
     image: '/images/tools/vscode.svg',
     tag: 'Recommended',
@@ -391,7 +391,7 @@ export const data = [
     },
   },
   {
-    id: 2.3,
+    id: 2.4,
     name: 'Foundation Css',
     image: '/images/style/foundation-css.svg',
     tag: 'Style',
@@ -408,7 +408,7 @@ export const data = [
     },
   },
   {
-    id: 2.4,
+    id: 2.5,
     name: 'Bulma Css',
     image: '/images/style/bulma-css.svg',
     tag: 'Style',
@@ -425,7 +425,7 @@ export const data = [
     },
   },
   {
-    id: 2.5,
+    id: 2.6,
     name: 'Sass',
     image: '/images/style/sass.svg',
     tag: 'Style',
@@ -442,7 +442,7 @@ export const data = [
     },
   },
   {
-    id: 2.6,
+    id: 2.7,
     name: 'Less',
     image: '/images/style/less.svg',
     tag: 'Style',
@@ -458,7 +458,7 @@ export const data = [
     },
   },
   {
-    id: 2.7,
+    id: 2.8,
     name: 'Next Ui',
     image: '/images/style/next-ui.png',
     tag: 'Style',
@@ -475,7 +475,7 @@ export const data = [
     },
   },
   {
-    id: 2.8,
+    id: 2.9,
     name: 'Material Ui',
     image: '/images/style/material-ui.svg',
     tag: 'Style',
@@ -492,7 +492,7 @@ export const data = [
     },
   },
   {
-    id: 2.9,
+    id: 2.1,
     name: 'Chakra Ui',
     image: '/images/style/chakra-ui.svg',
     tag: 'Style',
@@ -509,7 +509,7 @@ export const data = [
     },
   },
   {
-    id: 2.1,
+    id: 2.11,
     name: 'Ant Design',
     image: '/images/style/antd-ui.svg',
     tag: 'Style',
@@ -526,7 +526,7 @@ export const data = [
     },
   },
   {
-    id: 2.11,
+    id: 2.12,
     name: 'Semantic Ui',
     image: '/images/style/semantic-ui.svg',
     tag: 'Style',
@@ -543,7 +543,7 @@ export const data = [
     },
   },
   {
-    id: 2.12,
+    id: 2.13,
     name: 'Blade Ui',
     image: '/images/style/blade-ui.svg',
     tag: 'Style',
@@ -560,7 +560,7 @@ export const data = [
     },
   },
   {
-    id: 2.13,
+    id: 2.14,
     name: '100L5',
     image: '/images/style/100L5.svg',
     tag: 'Style',
@@ -582,7 +582,7 @@ export const data = [
   {
     id: 3.1,
     name: 'Pinterest',
-    image: '/images/ideas/pinterest.svg',
+    image: '/images/design/ideas/pinterest.svg',
     tag: 'Ideas',
     description:
       'Discover recipes, home ideas, style inspiration and other ideas to try.',
@@ -599,7 +599,7 @@ export const data = [
   {
     id: 3.2,
     name: 'Dribbble',
-    image: '/images/ideas/dribbble.svg',
+    image: '/images/design/ideas/dribbble.svg',
     tag: 'Ideas',
     description: 'Online community for showcasing user artwork.',
     link: 'https://dribbble.com/',
@@ -615,7 +615,7 @@ export const data = [
   {
     id: 3.3,
     name: 'Behance',
-    image: '/images/ideas/behance.svg',
+    image: '/images/design/ideas/behance.svg',
     tag: 'Ideas',
     description:
       'Behance is the world`s largest creative network for showcasing and discovering creative work.',
@@ -632,7 +632,7 @@ export const data = [
   {
     id: 3.4,
     name: 'Awwwards',
-    image: '/images/ideas/awwwwards.svg',
+    image: '/images/design/ideas/awwwwards.svg',
     tag: 'Ideas',
     description:
       'Behance is the world`s largest creative network for showcasing and discovering creative work.',
@@ -649,7 +649,7 @@ export const data = [
   {
     id: 3.5,
     name: 'Muzli',
-    image: '/images/ideas/muzli.png',
+    image: '/images/design/ideas/muzli.png',
     tag: 'Ideas',
     description: 'All the design inspiration you need. Served fresh.',
     link: 'https://muz.li/',
@@ -665,7 +665,7 @@ export const data = [
   {
     id: 3.6,
     name: 'Mobbin',
-    image: '/images/ideas/mobbin.gif',
+    image: '/images/design/ideas/mobbin.gif',
     tag: 'Ideas',
     description: 'Latest mobile design patterns.',
     link: 'https://mobbin.com/browse/web/apps',
@@ -681,7 +681,7 @@ export const data = [
   {
     id: 3.7,
     name: 'Page Collective',
-    image: '/images/ideas/page-collective.svg',
+    image: '/images/design/ideas/page-collective.svg',
     tag: 'Ideas',
     description: 'A lot of design ui example.',
     link: 'https://pagecollective.com/',
@@ -697,7 +697,7 @@ export const data = [
   {
     id: 3.8,
     name: 'Nicely Done',
-    image: '/images/ideas/nicely-done.png',
+    image: '/images/design/ideas/nicely-done.png',
     tag: 'Ideas',
     description: 'Products & pattern designs inspiration',
     link: 'https://nicelydone.club/',
@@ -713,7 +713,7 @@ export const data = [
   {
     id: 3.9,
     name: 'Collect Ui',
-    image: '/images/ideas/collect-ui.png',
+    image: '/images/design/ideas/collect-ui.png',
     tag: 'Ideas',
     description:
       'Daily inspiration collected from daily ui archive and beyond.',
@@ -728,9 +728,9 @@ export const data = [
     },
   },
   {
-    id: 3.1,
+    id: 3.11,
     name: 'Dark Mode Design',
-    image: '/images/ideas/dark-mode.jpeg',
+    image: '/images/design/ideas/dark-mode.jpeg',
     tag: 'Ideas',
     description: 'Showcasing the most beautifully designed dark mode websites',
     link: 'https://www.darkmodedesign.com/',
@@ -744,9 +744,9 @@ export const data = [
     },
   },
   {
-    id: 3.11,
+    id: 3.12,
     name: 'Designspiration',
-    image: '/images/ideas/designspiration.jpg',
+    image: '/images/design/ideas/designspiration.jpg',
     tag: 'Ideas',
     description:
       'The arrangement of lines or forms which make up the plan of act with special regards to the proportions, structures, moment and beauty of the work',
@@ -761,9 +761,9 @@ export const data = [
     },
   },
   {
-    id: 3.12,
+    id: 3.13,
     name: 'We Heart It',
-    image: '/images/ideas/we-love-it.webp',
+    image: '/images/design/ideas/we-love-it.webp',
     tag: 'Ideas',
     description:
       'Discover photos, videos and articles from friends that share your passion for beauty, fashion, photography, travel, music, wallpapers and more.',
@@ -1040,7 +1040,7 @@ export const data = [
   {
     id: 7.1,
     name: 'CodeWars',
-    image: '/images/algorithm/code-wars.svg',
+    image: '/images/algorithm/challenges/code-wars.svg',
     tag: 'Algorithm Challenges',
     description:
       'Improve your development skills by training with your peers on code kata that continuously challenge and push your coding practice.',
@@ -1057,7 +1057,7 @@ export const data = [
   {
     id: 7.2,
     name: 'LeetCode',
-    image: '/images/algorithm/leetcode.svg',
+    image: '/images/algorithm/challenges/leetcode.svg',
     tag: 'Algorithm Challenges',
     description:
       'LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.',
@@ -1074,7 +1074,7 @@ export const data = [
   {
     id: 7.3,
     name: 'Coderbyte',
-    image: '/images/algorithm/coderbyte.webp',
+    image: '/images/algorithm/challenges/coderbyte.webp',
     tag: 'Algorithm Challenges',
     description:
       'The industry`s #1 website for technical interview prep, coding challenges, and expert videos.',
@@ -1091,7 +1091,7 @@ export const data = [
   {
     id: 7.4,
     name: 'HackerRank',
-    image: '/images/algorithm/hackerrank.svg',
+    image: '/images/algorithm/challenges/hackerrank.svg',
     tag: 'Algorithm Challenges',
     description:
       'We help companies develop the strongest tech teams around. We help candidates sharpen their tech skills and pursue job opportunities.',
@@ -1108,7 +1108,7 @@ export const data = [
   {
     id: 7.5,
     name: 'Exercism',
-    image: '/images/algorithm/exercism.svg',
+    image: '/images/algorithm/challenges/exercism.svg',
     tag: 'Algorithm Challenges',
     description:
       'Develop fluency in 62 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.',
@@ -1125,7 +1125,7 @@ export const data = [
   {
     id: 7.6,
     name: 'CodeMonk',
-    image: '/images/algorithm/codemonk.svg',
+    image: '/images/algorithm/challenges/codemonk.svg',
     tag: 'Algorithm Challenges',
     description:
       'Codemonk is a curated list of topics to help you improve your skills in the fundamental concepts of programming.',
@@ -1142,7 +1142,7 @@ export const data = [
   {
     id: 7.7,
     name: 'Edabit',
-    image: '/images/algorithm/edabit.webp',
+    image: '/images/algorithm/challenges/edabit.webp',
     tag: 'Algorithm Challenges',
     description:
       'Learn to code with 10,000+ interactive challenges. Gain XP, unlock achievements and level up. Our bite-sized challenges are a shortcut through the coding maze.',
@@ -1159,10 +1159,9 @@ export const data = [
   {
     id: 7.8,
     name: 'NeetCode',
-    image: '/images/algorithm/neetcode.png',
+    image: '/images/algorithm/challenges/neetcode.png',
     tag: 'Algorithm Challenges',
-    description:
-      'A better way to prepare for coding interviews.',
+    description: 'A better way to prepare for coding interviews.',
     link: 'https://neetcode.io/',
     colors: {
       tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
@@ -1172,5 +1171,453 @@ export const data = [
       like: 0,
       favorite: false,
     },
-  }
+  },
+
+  // --------- Algorithm Books ---------- //
+
+  {
+    id: 8.1,
+    name: 'grokking algorithms',
+    image: '/images/algorithm/books/grokking-algorithms.png',
+    tag: 'Algorithm Books',
+    description:
+      'An illustrated guide for programmers and other curious people.',
+    link: 'https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm books', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 8.2,
+    name: 'Think Like A Programmer',
+    image: '/images/algorithm/books/think-like-a-programmer.jpg',
+    tag: 'Algorithm Books',
+    description: 'An introduction to creative problem solving.',
+    link: 'http://www.r-5.org/files/books/computers/overviews/patterns/V_Anton_Spraul-Think_Like_a_Programmer-EN.pdf',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm books', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 8.3,
+    name: 'Introduction to Algorithms',
+    image: '/images/algorithm/books/introduction-to-algorithms.jpg',
+    tag: 'Algorithm Books',
+    description:
+      'Introduction to Algorithms uniquely combines rigor and comprehensiveness.',
+    link: 'https://sd.blackball.lv/library/Introduction_to_Algorithms_Third_Edition_(2009).pdf',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm books', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 8.4,
+    name: 'Algorithms in a nutshell',
+    image: '/images/algorithm/books/algorithms-in-a-nutshell.jpg',
+    tag: 'Algorithm Books',
+    description:
+      'Algorithms in a Nutshell describes a large number of existing algorithms for solving a variety of problems.',
+    link: 'http://www.r-5.org/files/books/computers/algo-list/common/Heineman_Pollice_Selkow-Algorithms_in_a_Nutshell-EN.pdf',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm books', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+
+  // --------- Algorithm Websites ---------- //
+
+  {
+    id: 9.1,
+    name: 'Algorithm Visualizer',
+    image: '/images/not-found/not-found.png',
+    tag: 'Algorithm Websites',
+    description:
+      'Algorithm Visualizer is an interactive online platform that visualizes algorithms from code.',
+    link: 'https://algorithm-visualizer.org/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['algorithm website', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+
+  // -------------- Design --------------- //
+
+  {
+    id: 10.1,
+    name: 'Figma',
+    image: '/images/design/figma.svg',
+    tag: 'Design',
+    description: 'Design and collaborate all in the browser.',
+    link: 'https://www.figma.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design', 'popular'],
+    trend: {
+      like: 0,
+      favorite: true,
+    },
+  },
+  {
+    id: 10.2,
+    name: 'Sketch',
+    image: '/images/design/sketch.png',
+    tag: 'Design',
+    description:
+      'Sketch is the most popular design tool for UX/UI designers 💎',
+    link: 'https://www.sketch.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.3,
+    name: 'Adobe XD',
+    image: '/images/design/adobe-xd.svg',
+    tag: 'Design',
+    description: 'An all-in-one design and prototyping app.',
+    link: 'https://www.sketch.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.4,
+    name: 'Plant',
+    image: '/images/design/plant.png',
+    tag: 'Design',
+    description:
+      'Plant makes it simple to store your design changes when working on Sketch files with your team.',
+    link: 'https://plantapp.io/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.5,
+    name: 'Lottie',
+    image: '/images/design/lottie.webp',
+    tag: 'Design',
+    description:
+      'LottieFiles takes away the complexity from Motion Design. It lets you Create, Edit, Test, Collaborate and Ship a Lottie in the easiest way possible.',
+    link: 'https://lottiefiles.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.6,
+    name: 'Zeplin',
+    image: '/images/design/zeplin.svg',
+    tag: 'Design',
+    description:
+      'Organize screens. Publish locked designs. Scale design systems. All in a workspace friendly to the entire team, including non-designers.',
+    link: 'https://zeplin.io/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.7,
+    name: 'Abstract',
+    image: '/images/design/abstract.png',
+    tag: 'Design',
+    description:
+      'Design together, in real-time with version control for Sketch. Collaborate in the same file at the same time, without losing the original.',
+    link: 'https://www.abstract.com/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.8,
+    name: 'Overflow',
+    image: '/images/design/overflow.png',
+    tag: 'Design',
+    description: 'Turn your designs into playable user flow diagrams.',
+    link: 'https://overflow.io/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.9,
+    name: 'Maze',
+    image: '/images/design/maze.avif',
+    tag: 'Design',
+    description: 'Turn your prototype into actionable insights.',
+    link: 'https://maze.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // -------------- Design Articles --------------- //
+
+  {
+    id: 10.1,
+    name: 'PPWD: 5 Essential Steps',
+    image: '/images/not-found/read.svg',
+    tag: 'Design Articles',
+    description:
+      'Pixel Perfect Web Development: 5 Essential Steps by Daniel Corin Stig.',
+    link: 'https://thewhitelabelagency.com/pixel-perfect-web-development-5-essential-steps/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design articles'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.2,
+    name: 'Learn Responsive Design!',
+    image: '/images/not-found/read.svg',
+    tag: 'Design Articles',
+    description:
+      'A course exploring all aspects of responsive design. Learn how to make sites that look great and work well for everyone.',
+    link: 'https://web.dev/learn/design/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design articles'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.3,
+    name: 'Style Guides, Design Systems',
+    image: '/images/not-found/read.svg',
+    tag: 'Design Articles',
+    description:
+      'Everything I Know About Style Guides, Design Systems, and Component Libraries.',
+    link: 'https://leerob.io/blog/style-guides-component-libraries-design-systems',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design articles'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 10.4,
+    name: 'Atomic design',
+    image: '/images/not-found/read.svg',
+    tag: 'Design Articles',
+    description:
+      'As the craft of Web design continues to evolve, we’re recognizing the need to develop thoughtful design systems, rather than creating simple collections of web pages.',
+    link: 'https://bradfrost.com/blog/post/atomic-web-design/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['design articles'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // -------------- Design Color --------------- //
+
+  {
+    id: 11.1,
+    name: 'Happy Hues',
+    image: '/images/design/colors/happy-hues.gif',
+    tag: 'Colors',
+    description:
+      'Happy Hues is a color palette inspiration site that acts as a real world example as to how the colors could be used in your design projects.',
+    link: 'https://www.happyhues.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.2,
+    name: 'Coolors',
+    image: '/images/design/colors/coolors.jpg',
+    tag: 'Colors',
+    description:
+      'Create the perfect palette or get inspired by thousands of beautiful color schemes.',
+    link: 'https://coolors.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.3,
+    name: 'HexColor',
+    image: '/images/design/colors/hex-color.png',
+    tag: 'Colors',
+    description:
+      'A collection of free color tools that will help you choose the right color for your next project! Meet a few tools that will make working with color faster and more fun.',
+    link: 'https://hexcolor.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.4,
+    name: 'HexColor',
+    image: '/images/design/colors/duo.png',
+    tag: 'Colors',
+    description:
+      'Duo is a collection of colour combinations that I`ve curated from personal projects or that I`ve come across on the web.',
+    link: 'https://duo.alexpate.uk/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.5,
+    name: 'Adobe Color',
+    image: '/images/design/colors/adobe-color.png',
+    tag: 'Colors',
+    description: 'Browse thousands of color combinations.',
+    link: 'https://color.adobe.com/explore',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.6,
+    name: 'Khroma',
+    image: '/images/design/colors/khroma.png',
+    tag: 'Colors',
+    description: 'Browse thousands of color combinations.',
+    link: 'https://www.khroma.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.7,
+    name: 'Color Hunt',
+    image: '/images/design/colors/color-hunt.jpeg',
+    tag: 'Colors',
+    description: 'Free and open platform for color inspiration.',
+    link: 'https://colorhunt.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 11.8,
+    name: 'Eva Color Generator',
+    image: '/images/design/colors/eva-color-generator.gif',
+    tag: 'Colors',
+    description: 'Complimentary color generator powered by deep learning.',
+    link: 'https://colors.eva.design/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['colors'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
 ];

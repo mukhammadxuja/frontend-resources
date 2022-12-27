@@ -16,7 +16,7 @@ import { TfiLightBulb } from 'react-icons/tfi';
 
 import { useCardContext } from 'context/cardContext';
 import SubMenu from './SubMenu';
-import { menu } from 'data/menu';
+import { menu } from 'data/menus';
 
 const icons = [
   TbThumbUp,
