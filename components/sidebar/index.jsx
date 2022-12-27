@@ -16,7 +16,7 @@ import { TfiLightBulb } from 'react-icons/tfi';
 
 import { useCardContext } from 'context/cardContext';
 import SubMenu from './SubMenu';
-import { menu } from 'data/menus';
+import { menus } from 'data/menus';
 
 const icons = [
   TbThumbUp,
@@ -45,7 +45,7 @@ const Sidebar = ({ children }) => {
   return (
     <div className="container mx-auto flex gap-5">
       <aside className="my-10">
-        {menu.map((menu, index) => {
+        {menus.map((menu, index) => {
           const Icon = icons[index];
           return (
             <ul className="md:w-72" key={index}>
