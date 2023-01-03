@@ -12,6 +12,7 @@ const Menu = () => {
         {menus.map((menu, index) => (
           <div key={index}>
             <RoundedButton
+              menu={menu}
               subMenu={menu.subMenu}
               setCardTag={setCardTag}
               title={menu.title}

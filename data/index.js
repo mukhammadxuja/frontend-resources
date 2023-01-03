@@ -4,7 +4,7 @@ export const data = [
     id: 0.1,
     name: 'Typescript',
     image: '/images/tools/typescript.svg',
-    tag: 'Recommended',
+    tag: '2023',
     description:
       'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
     link: 'https://www.typescriptlang.org/',
@@ -12,7 +12,7 @@ export const data = [
       tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['tools', 'popular'],
+    hashtags: ['tools', 'popular', 'recommended'],
     trend: {
       like: 0,
       favorite: true,
@@ -22,14 +22,14 @@ export const data = [
     id: 0.2,
     name: 'React.js',
     image: '/images/tools/react-js.svg',
-    tag: 'Recommended',
+    tag: '2023',
     description: 'React is a JavaScript library for building user interfaces.',
     link: 'https://reactjs.org/',
     colors: {
       tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['tools', 'popular'],
+    hashtags: ['tools', 'popular', 'recommended'],
     trend: {
       like: 0,
       favorite: true,
@@ -39,7 +39,7 @@ export const data = [
     id: 0.3,
     name: 'Next.js',
     image: '/images/tools/next-js.svg',
-    tag: 'Recommended',
+    tag: '2023',
     description:
       'Next.js is a React framework that gives you building blocks to create web applications.',
     link: 'https://nextjs.org/',
@@ -47,7 +47,7 @@ export const data = [
       tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['tools', 'popular'],
+    hashtags: ['tools', 'popular', 'recommended'],
     trend: {
       like: 0,
       favorite: true,
@@ -57,14 +57,14 @@ export const data = [
     id: 0.4,
     name: 'Tailwind Css',
     image: '/images/style/tailwind-css.svg',
-    tag: 'Recommended',
+    tag: '2023',
     description:
       'Tailwind CSS makes it quicker to write and maintain the code of your application.',
     link: 'https://tailwindcss.com/',
     colors: {
       tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
     },
-    hashtags: ['framework', 'popular'],
+    hashtags: ['framework', 'popular', 'recommended'],
     trend: {
       like: 0,
       favorite: true,
@@ -74,7 +74,7 @@ export const data = [
     id: 0.5,
     name: 'Vscode',
     image: '/images/tools/vscode.svg',
-    tag: 'Recommended',
+    tag: '2023',
     description:
       'Visual Studio Code is a free coding editor that helps you start coding quickly.',
     link: 'https://code.visualstudio.com/',
@@ -82,7 +82,7 @@ export const data = [
       tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['popular', 'tools'],
+    hashtags: ['popular', 'tools', 'recommended'],
     trend: {
       like: 0,
       favorite: true,

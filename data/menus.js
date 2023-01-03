@@ -1,7 +1,7 @@
 export const menus = [
   {
     id: 0,
-    title: 'Recommended',
+    title: '2023',
     color: '#f44336',
   },
   {
