@@ -7,8 +7,8 @@ const Menu = () => {
   const { setCardTag } = useCardContext();
 
   return (
-    <div className="container relative mx-auto overflow-x-scroll scrollbar-hide">
-      <div className="flex w-full items-center space-x-2 sm:max-w-7xl md:mx-auto md:mt-16 md:flex-wrap md:justify-center">
+    <div className="container relative mx-auto">
+      <div className="flex w-full items-center space-x-2 sm:max-w-7xl md:mx-auto md:py-16 md:flex-wrap md:justify-center">
         {menus.map((menu, index) => (
           <div key={index}>
             <RoundedButton

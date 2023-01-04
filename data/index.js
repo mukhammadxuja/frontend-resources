@@ -1620,4 +1620,59 @@ export const data = [
       favorite: false,
     },
   },
+
+  // -------------- HTML --------------- //
+
+  {
+    id: 12.1,
+    name: '',
+    image: '/images/design/colors/happy-hues.gif',
+    tag: 'HTML',
+    description:
+      'Happy Hues is a color palette inspiration site that acts as a real world example as to how the colors could be used in your design projects.',
+    link: 'https://www.happyhues.co/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['HTML'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+
+  // -------------- HTML Accessibility --------------- //
+
+  {
+    id: 13.1,
+    name: 'Accessible Components',
+    image: '/images/not-found/read.svg',
+    tag: 'Accessibility',
+    description: 'A Complete Guide To Accessible Front-End Components.',
+    link: 'https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['HTML'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
+  {
+    id: 13.2,
+    name: 'Accessible',
+    image: '/images/not-found/read.svg',
+    tag: 'Accessibility',
+    description: 'The Importance Of Manual Accessibility Testing.',
+    link: 'https://www.smashingmagazine.com/2018/09/importance-manual-accessibility-testing/',
+    colors: {
+      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+    },
+    hashtags: ['HTML'],
+    trend: {
+      like: 0,
+      favorite: false,
+    },
+  },
 ];

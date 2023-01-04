@@ -46,6 +46,7 @@ const Sidebar = ({ children }) => {
     <div className="container mx-auto flex gap-5">
       <aside className="my-10">
         {menus.map((menu, index) => {
+          console.log(menu.color);
           const Icon = icons[index];
           return (
             <ul className="md:w-72" key={index}>
@@ -56,7 +57,7 @@ const Sidebar = ({ children }) => {
                   className="flex cursor-pointer items-center justify-between rounded-lg p-2 hover:bg-gray-100"
                 >
                   <div className="flex items-center space-x-2">
-                    <Icon className="rounded-lg bg-gray-200 p-2 text-4xl text-gray-600" />
+                    <Icon className={`bg-[${menu.color}] rounded-lg p-2 text-4xl text-gray-600`} />
                     <a
                       className={`${
                         cardTag === menu.title ? 'text-black' : ''

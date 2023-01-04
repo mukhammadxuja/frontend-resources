@@ -3,7 +3,8 @@ import Head from 'next/head';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 
-import { Header, Menu, Cards } from 'components';
+import { Header, Menu, Card, Sidebar } from 'components';
+import { data } from 'data/index';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -22,21 +23,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="mt-16">
-        <Header />
-        <Menu />
-        <Cards />
+        <Sidebar>
+          <div className="py-10">
+            <div className="grid grid-cols-1 justify-items-center gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {data.map((card, index) => (
+                <Card key={index} {...card} />
+              ))}
+            </div>
+          </div>
+        </Sidebar>
       </main>
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+      {/* <button onClick={() => setTheme('light')}>Light Mode</button>
+      <button onClick={() => setTheme('dark')}>Dark Mode</button> */}
     </div>
   );
-}
-
-{
-  /* <h1 className="text-3xl font-bold underline">{locale}</h1>
-<h1>The current theme is: {theme}</h1>
-<div className="flex items-center space-x-4">
-  <button onClick={() => setTheme('light')}>Light Mode</button>
-  <button onClick={() => setTheme('dark')}>Dark Mode</button>
-</div> */
 }
