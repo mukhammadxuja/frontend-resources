@@ -2,13 +2,13 @@ export const menus = [
   {
     id: 0,
     title: '2023',
-    color: '#f44336',
+    color: 'green',
   },
   {
     id: 1,
     title: 'API',
     icon: 'TbApi',
-    color: '',
+    color: 'gray',
   },
   {
     id: 2,
@@ -87,7 +87,7 @@ export const menus = [
       {
         id: 3_13,
         title: 'Typography',
-      }
+      },
     ],
   },
   {

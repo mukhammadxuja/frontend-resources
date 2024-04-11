@@ -13,19 +13,18 @@ const Card = (props) => {
     trend,
     index,
   } = props;
-  const { cardTag, like, setLike } = useCardContext();
+  const { cardTag, like, setLike, colorVariants } = useCardContext();
 
   const tagColors = tag === cardTag ? `${colors.tagColors}` : '';
 
-  const borderAndShadowColor =
-    tag === cardTag ? `${colors.borderColor}` : '';
+  const borderAndShadowColor = tag === cardTag ? `${colors.borderColor}` : '';
 
   return (
     <div
       key={index}
       className={
         tag === cardTag
-          ? `group w-full space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:space-y-5 lg:p-5`
+          ? `group w-full space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:p-5`
           : 'hidden'
       }
     >
@@ -60,21 +59,20 @@ const Card = (props) => {
               />
             </svg>
           )}
-
-          {/* <span className={`rounded-xl ${tagColors} px-4 py-1.5 font-semibold`}>
-            {tag}
-          </span> */}
         </div>
       </div>
       <div className="space-y-2">
-        <h1 className="text-lg font-bold text-gray-800 line-clamp-2 md:text-lg lg:font-extrabold">
+        <h1 className="text-lg font-bold leading-relaxed text-gray-800 line-clamp-2 md:text-lg">
           {description}
         </h1>
         <div className="flex items-center space-x-2">
           {hashtags.map((hashtag, index) => (
-            <button key={index} className="rounded-lg border-2 border-slate-300 px-4 py-0.5 font-semibold text-slate-700">
+            <span
+              key={index}
+              className={`items-center rounded-lg border-2 border-slate-300 px-3 py-0.5 text-sm font-normal ${colorVariants[tagColors]}`}
+            >
               #{hashtag}
-            </button>
+            </span>
           ))}
         </div>
       </div>

@@ -9,10 +9,10 @@ export const data = [
       'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
     link: 'https://www.typescriptlang.org/',
     colors: {
-      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      tagColors: 'green',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['tools', 'popular', 'recommended'],
+    hashtags: ['tools', 'popular'],
     trend: {
       like: 0,
       favorite: true,
@@ -26,10 +26,10 @@ export const data = [
     description: 'React is a JavaScript library for building user interfaces.',
     link: 'https://reactjs.org/',
     colors: {
-      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      tagColors: 'green',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['tools', 'popular', 'recommended'],
+    hashtags: ['tools', 'popular'],
     trend: {
       like: 0,
       favorite: true,
@@ -44,10 +44,10 @@ export const data = [
       'Next.js is a React framework that gives you building blocks to create web applications.',
     link: 'https://nextjs.org/',
     colors: {
-      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      tagColors: 'green',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['tools', 'popular', 'recommended'],
+    hashtags: ['tools', 'popular'],
     trend: {
       like: 0,
       favorite: true,
@@ -62,9 +62,9 @@ export const data = [
       'Tailwind CSS makes it quicker to write and maintain the code of your application.',
     link: 'https://tailwindcss.com/',
     colors: {
-      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      tagColors: 'green',
     },
-    hashtags: ['framework', 'popular', 'recommended'],
+    hashtags: ['framework', 'popular'],
     trend: {
       like: 0,
       favorite: true,
@@ -79,10 +79,10 @@ export const data = [
       'Visual Studio Code is a free coding editor that helps you start coding quickly.',
     link: 'https://code.visualstudio.com/',
     colors: {
-      tagColors: 'bg-green-200 text-green-500 hover:bg-green-100',
+      tagColors: 'green',
       borderColor: 'hover:border-green-500',
     },
-    hashtags: ['popular', 'tools', 'recommended'],
+    hashtags: ['popular', 'tools'],
     trend: {
       like: 0,
       favorite: true,
@@ -893,7 +893,7 @@ export const data = [
     description: 'RapidAPI is the world`s largest API Marketplace.',
     link: 'https://rapidapi.com/collection/list-of-free-apis',
     colors: {
-      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+      tagColors: 'gray',
     },
     hashtags: ['api', 'popular'],
     trend: {
@@ -909,7 +909,7 @@ export const data = [
     description: 'Documentation and Test Consoles for Over 1400 Public APIs.',
     link: 'https://any-api.com/',
     colors: {
-      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+      tagColors: 'gray',
     },
     hashtags: ['api'],
     trend: {
@@ -925,7 +925,7 @@ export const data = [
     description: 'Free fake API for testing and prototyping.',
     link: 'https://jsonplaceholder.typicode.com/',
     colors: {
-      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+      tagColors: 'gray',
     },
     hashtags: ['api', 'fake api'],
     trend: {
@@ -941,7 +941,7 @@ export const data = [
     description: 'A collective list of APIs. Build.',
     link: 'https://apilist.fun/',
     colors: {
-      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+      tagColors: 'gray',
     },
     hashtags: ['api'],
     trend: {
@@ -957,7 +957,7 @@ export const data = [
     description: 'A collective list of free APIs.',
     link: 'https://github.com/public-apis/public-apis',
     colors: {
-      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+      tagColors: 'gray',
     },
     hashtags: ['api'],
     trend: {
@@ -973,7 +973,7 @@ export const data = [
     description: '30 Free & Open APIs for Marketers & Content Developers',
     link: 'https://blog.hubspot.com/website/free-open-apis',
     colors: {
-      tagColors: 'bg-gray-200 text-gray-500 hover:bg-gray-100',
+      tagColors: 'gray',
     },
     hashtags: ['api', 'blog'],
     trend: {

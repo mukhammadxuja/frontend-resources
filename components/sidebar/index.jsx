@@ -35,7 +35,8 @@ const icons = [
 
 const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(0);
-  const { setCardTag, cardTag } = useCardContext();
+  const { setCardTag, cardTag, colorVariants } = useCardContext();
+  console.log();
 
   const handleClick = (menuId, tag) => {
     setOpen(menuId);
@@ -43,48 +44,51 @@ const Sidebar = ({ children }) => {
   };
 
   return (
-    <div className="container mx-auto flex gap-5">
-      <aside className="my-10">
-        {menus.map((menu, index) => {
-          console.log(menu.color);
-          const Icon = icons[index];
-          return (
-            <ul className="md:w-72" key={index}>
-              <li>
-                <div
-                  onClick={() => setCardTag(menu.title)}
-                  onDoubleClick={() => setOpen(0)}
-                  className="flex cursor-pointer items-center justify-between rounded-lg p-2 hover:bg-gray-100"
-                >
-                  <div className="flex items-center space-x-2">
-                    <Icon className={`bg-[${menu.color}] rounded-lg p-2 text-4xl text-gray-600`} />
-                    <a
-                      className={`${
-                        cardTag === menu.title ? 'text-black' : ''
-                      } whitespace-nowrap text-lg font-semibold text-gray-500`}
-                    >
-                      {menu.title}
-                    </a>
-                  </div>
-                  {menu.subMenu && (
-                    <MdArrowBackIosNew
-                      onClick={() => setOpen(menu.id)}
-                      className={
-                        open === menu.id
-                          ? 'mt-1 mr-2 rotate-90'
-                          : 'mt-1 mr-2 -rotate-90'
-                      }
-                    />
-                  )}
+    <aside>
+      {menus.map((menu, index) => {
+        console.log(menu.color);
+        const Icon = icons[index];
+        return (
+          <ul className="md:w-72" key={index}>
+            <li>
+              <div
+                onClick={() => setCardTag(menu.title)}
+                onDoubleClick={() => setOpen(0)}
+                className={`flex cursor-pointer items-center justify-between rounded-lg p-2 hover:bg-gray-100 ${
+                  cardTag === menu.title && colorVariants[menu.color]
+                }`}
+              >
+                <div className="flex items-center space-x-2">
+                  <Icon
+                    className={`bg-[${menu.color}] ${
+                      cardTag === menu.title ? colorVariants[menu.color] : ''
+                    } rounded-lg p-2 text-4xl text-gray-600 hover:!bg-transparent`}
+                  />
+                  <a
+                    className={`${
+                      cardTag === menu.title ? colorVariants[menu.color] : ''
+                    } whitespace-nowrap text-lg font-semibold text-gray-500 hover:!bg-transparent`}
+                  >
+                    {menu.title}
+                  </a>
                 </div>
-                <SubMenu menu={menu} open={open} />
-              </li>
-            </ul>
-          );
-        })}
-      </aside>
-      <main>{children}</main>
-    </div>
+                {menu.subMenu && (
+                  <MdArrowBackIosNew
+                    onClick={() => setOpen(menu.id)}
+                    className={
+                      open === menu.id
+                        ? 'mt-1 mr-2 rotate-90'
+                        : 'mt-1 mr-2 -rotate-90'
+                    }
+                  />
+                )}
+              </div>
+              <SubMenu menu={menu} open={open} />
+            </li>
+          </ul>
+        );
+      })}
+    </aside>
   );
 };
 
