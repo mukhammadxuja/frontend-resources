@@ -24,12 +24,12 @@ const Card = (props) => {
       key={index}
       className={
         tag === cardTag
-          ? `group w-full space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:p-5`
+          ? `group w-full overflow-x-hidden space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:p-5`
           : 'hidden'
       }
     >
       <div className="flex items-center justify-between">
-        <div className="flex h-16 w-16 items-center">
+        <div className="w-full flex h-16 items-center">
           <div className="rounded-xl bg-slate-50 p-1">
             <Image
               src={image}
@@ -40,9 +40,9 @@ const Card = (props) => {
               alt=""
             />
           </div>
-          <p className="ml-2 whitespace-nowrap text-lg font-semibold text-gray-700 md:ml-3 md:text-xl">
+          <h4 className="ml-2 w-full text-lg font-semibold text-gray-700 md:ml-3 md:text-xl">
             {name}
-          </p>
+          </h4>
         </div>
         <div className="flex items-center space-x-2">
           {trend.favorite && (

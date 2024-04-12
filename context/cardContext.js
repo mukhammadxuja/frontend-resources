@@ -7,7 +7,7 @@ export const useCardContext = () => {
 };
 
 export const CardContextProvider = ({ children }) => {
-  const [cardTag, setCardTag] = useState('2023');
+  const [cardTag, setCardTag] = useState('Tools');
   const [hashTag, setHashTag] = useState('');
   const [like, setLike] = useState(false);
 
