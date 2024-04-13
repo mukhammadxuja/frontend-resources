@@ -46,7 +46,9 @@ function Tab({ data }) {
               isActive ? `text-white dark:text-black` : `text-gray-500`
             } hover:text-muted my-1.5 flex cursor-pointer select-none items-center gap-1.5 whitespace-nowrap rounded-full px-4 text-center text-[16px] font-semibold leading-[1.3em] tracking-[-0.1px] duration-300`}
           >
-            <span style={{ color: tab?.color }}>{tab?.icon}</span>
+            <span style={{ color: tab?.color }}>
+              {tab?.icon}
+            </span>
             <span>{tab.title}</span>
           </button>
         );

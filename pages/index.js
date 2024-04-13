@@ -89,7 +89,7 @@ export default function Home() {
           </Link>
         </div>
       </header>
-      <nav className="container sticky -top-1 z-50 mx-auto h-full overflow-x-scroll bg-white bg-opacity-50 py-2 backdrop-blur-sm md:top-24 md:py-4">
+      <nav className="container sticky z-50 mx-auto h-full overflow-x-scroll bg-white bg-opacity-50 py-2 backdrop-blur-sm md:top-[calc(6rem_-_1px)] md:py-4">
         <ul className="flex flex-nowrap items-center gap-x-2">
           <Tab data={menus} />
         </ul>
