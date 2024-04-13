@@ -1,103 +1,150 @@
+import { Accessibility } from '@components/svg/accessibility';
+import { Blog } from '@components/svg/blog';
+import { Books } from '@components/svg/books';
+import { Inspiration } from '@components/svg/inspiration';
+import { Learning } from '@components/svg/learing';
+import { Mockups } from '@components/svg/mockups';
+import { Photos } from '@components/svg/photos';
+import { Podcast } from '@components/svg/podcast';
+import { Tools } from '@components/svg/tools';
+import { Icons } from '@components/svg/icons';
+import { Ai } from '@components/svg/ai';
+import { Typography } from '@components/svg/typography';
+import { Freelance } from '@components/svg/freelance';
+import { Jobs } from '@components/svg/jobs';
+import { All } from '@components/svg/all';
+import { News } from '@components/svg/news';
+import { Videos } from '@components/svg/videos';
+import { Challenges } from '@components/svg/challenges';
+import { Courses } from '@components/svg/courses';
+import { Api } from '@components/svg/api';
+import { DesignSystem } from '@components/svg/design-system';
+
 export const menus = [
   {
     id: 0,
     title: 'All',
-    color: 'green',
+    icon: <All />,
+    color: '#007acc',
   },
   {
     id: 1,
     title: 'Accessibility',
-    color: 'gray',
+    icon: <Accessibility />,
+    color: '',
   },
   {
     id: 2,
     title: 'Books',
-    color: 'gray',
+    icon: <Books />,
+    color: '',
   },
 
   {
     id: 3,
     title: 'API',
-    color: 'gray',
+    icon: <Api />,
+    color: '',
   },
   {
     id: 4,
-    title: 'Articles',
+    title: 'Blogs',
+    icon: <Blog />,
     color: '',
   },
   {
     id: 5,
     title: 'News',
-    color: 'gray',
+    icon: <News />,
+    color: '',
   },
   {
     id: 6,
     title: 'Podcast',
-    color: '',
+    icon: <Podcast />,
   },
   {
     id: 7,
     title: 'Challenges',
+    icon: <Challenges />,
     color: '',
   },
   {
     id: 8,
     title: 'Courses',
+    icon: <Courses />,
     color: '',
   },
   {
     id: 9,
-    title: 'Learn',
+    title: 'Learning',
+    icon: <Learning />,
     color: '',
   },
   {
     id: 10,
     title: 'Tools',
-    color: 'gray',
+    icon: <Tools />,
+    color: '',
+  },
+  {
+    id: 20,
+    title: 'AI Tools',
+    icon: <Ai />,
+    color: '',
   },
   {
     id: 11,
     title: 'Jobs',
+    icon: <Jobs />,
     color: '',
   },
   {
     id: 12,
     title: 'Freelancing',
-    color: 'gray',
+    icon: <Freelance />,
+    color: '',
   },
   {
     id: 13,
     title: 'Design Systems',
-    color: 'gray',
+    icon: <DesignSystem />,
+    color: '',
   },
   {
     id: 14,
     title: 'Inspiration',
+    icon: <Inspiration />,
     color: '',
   },
   {
     id: 15,
     title: 'Mockups',
+    icon: <Mockups />,
     color: '',
   },
   {
     id: 16,
     title: 'Icons',
-    color: 'gray',
+    icon: <Icons />,
+    color: '',
   },
   {
     id: 17,
     title: 'Typography',
-    color: 'gray',
+    icon: <Typography />,
+    color: '',
   },
   {
     id: 18,
     title: 'Photos',
+    icon: <Photos />,
     color: '',
   },
   {
     id: 19,
     title: 'Videos',
+    icon: <Videos />,
     color: '',
   },
 ];

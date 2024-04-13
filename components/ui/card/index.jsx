@@ -13,7 +13,8 @@ const Card = (props) => {
     trend,
     index,
   } = props;
-  const { cardTag, like, setLike, colorVariants } = useCardContext();
+  const { cardTag, colorVariants } = useCardContext();
+  console.log(name);
 
   const tagColors = tag === cardTag ? `${colors.tagColors}` : '';
 
@@ -22,14 +23,10 @@ const Card = (props) => {
   return (
     <div
       key={index}
-      className={
-        tag === cardTag
-          ? `group w-full overflow-x-hidden space-y-3 rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:p-5`
-          : 'hidden'
-      }
+      className={`group w-full space-y-3 overflow-x-hidden rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:p-5`}
     >
       <div className="flex items-center justify-between">
-        <div className="w-full flex h-16 items-center">
+        <div className="flex h-16 w-full items-center">
           <div className="rounded-xl bg-slate-50 p-1">
             <Image
               src={image}

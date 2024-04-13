@@ -7,7 +7,7 @@ export const useCardContext = () => {
 };
 
 export const CardContextProvider = ({ children }) => {
-  const [cardTag, setCardTag] = useState('Tools');
+  const [cardTag, setCardTag] = useState('All');
   const [hashTag, setHashTag] = useState('');
   const [like, setLike] = useState(false);
 
