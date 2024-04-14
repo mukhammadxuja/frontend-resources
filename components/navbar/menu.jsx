@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import { useTheme } from 'next-themes';
 import React from 'react';
 
 function Menu({ open, setOpen }) {
+  const { theme, setTheme } = useTheme();
+
   return (
     <div className="relative w-full md:w-auto">
       <svg
@@ -11,7 +14,9 @@ function Menu({ open, setOpen }) {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`ml-auto h-12 w-12 cursor-pointer rounded-lg p-2 duration-300 hover:bg-gray-100 ${open && "bg-gray-100"}`}
+        className={`ml-auto h-12 w-12 cursor-pointer rounded-lg p-2 duration-300 ${
+          open && 'bg-background'
+        }`}
       >
         <path
           strokeLinecap="round"
@@ -20,33 +25,36 @@ function Menu({ open, setOpen }) {
         />
       </svg>
       <div
-        className={`absolute left-1/2 z-[100] mt-8 w-full -translate-x-1/2 rounded-[10px] border bg-white p-4 shadow-md md:left-auto md:right-0 md:w-[280px] md:translate-x-0 ${
+        className={`absolute left-1/2 z-[100] mt-8 w-full -translate-x-1/2 rounded-[10px] border border-border bg-background p-4 shadow-md md:left-auto md:right-0 md:w-[280px] md:translate-x-0 ${
           open
             ? 'visible translate-y-0 opacity-100 duration-200'
             : 'invisible translate-y-1.5 opacity-0 duration-200'
         }`}
       >
-        <h5 className="pb-2 text-xs font-medium text-gray-500">APPEARANCE</h5>
+        <h5 className="pb-2 text-xs font-medium text-muted">APPEARANCE</h5>
         <div className="flex items-center gap-1.5 pb-3">
           <img
+            onClick={() => setTheme('light')}
             className="h-[72px] cursor-pointer rounded-md duration-300 hover:scale-105"
             src="https://refero.design/static/media/theme-light@x2.85c8e00f94921db5ac28.png"
             alt="light"
           />
           <img
+            onClick={() => setTheme('dark')}
             className="h-[72px] cursor-pointer rounded-md duration-300 hover:scale-105"
             src="https://refero.design/static/media/theme-dark@x2.c5f24e29a7461c398bf3.png"
             alt="dark"
           />
           <img
+            onClick={() => setTheme('system')}
             className="h-[72px] cursor-pointer rounded-md duration-300 hover:scale-105"
             src="https://refero.design/static/media/theme-system@x2.0bfa48e19a5c5388a54e.png"
             alt="system"
           />
         </div>
-        <div className="space-y-1.5 border-t pt-3">
+        <div className="space-y-1.5 border-t border-border pt-3">
           <a
-            className="btn btn_transparent flex w-full items-center gap-x-1.5"
+            className="btn btn_ghost flex w-full items-center gap-x-1.5"
             href=""
           >
             <svg
@@ -67,7 +75,7 @@ function Menu({ open, setOpen }) {
             <span>Totally Free</span>
           </a>
           <a
-            className="btn btn_transparent flex w-full items-center gap-x-1.5"
+            className="btn btn_ghost flex w-full items-center gap-x-1.5"
             href=""
           >
             <svg
@@ -86,7 +94,7 @@ function Menu({ open, setOpen }) {
             <span>Give a Star</span>
           </a>
           <a
-            className="btn btn_transparent flex w-full items-center gap-x-1.5"
+            className="btn btn_ghost flex w-full items-center gap-x-1.5"
             href=""
           >
             <svg

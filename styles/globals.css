@@ -2,16 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --light-foreground: #fff;
+  --light-background: #f1f0f0;
+  --light-primary: #252525;
+  --light-secondary: #5c87f6;
+  --light-secondary-muted: #0f2a29;
+  --light-muted: rgb(91, 90, 90);
+  --light-border: #e5ead7;
+
+  /* Main colors */
+  --light-info-bg: #eaefff;
+  --light-info-text: #4b6cc2;
+  --light-warning-bg: #ffeace;
+  --light-warning-text: #d17825;
+  --light-danger-bg: #ffe4e2;
+  --light-danger-text: #ed0143;
+
+  --dark-foreground: #111318;
+  --dark-background: #161f31;
+  --dark-primary: #e2eafd;
+  --dark-secondary: #5c87f6;
+  --dark-secondary-muted: #1b2234;
+  --dark-muted: #aaacab;
+  --dark-border: #2b372f;
+  /* Main colors */
+  --dark-info-bg: #1b2234;
+  --dark-info-text: #5c87f6;
+  --dark-warning-bg: #28201b;
+  --dark-warning-text: #e2872c;
+  --dark-danger-bg: #27181e;
+  --dark-danger-text: #ce3f49;
+
+  --border-radius-0: 4px;
+  --border-radius-3: 16px;
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+  --space-9: 56px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+  --space-13: 128px;
+  --space-14: 256px;
+  --space-15: 512px;
+  --font-fallback: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-display: 'Inter', var(--font-fallback);
+  --font-mono: 'Fira Code', monospace;
+  --font-numeric: 'Space Grotesk', var(--font-fallback);
+  --font-size-0: 12px;
+  --font-size-1: 14px;
+  --font-size-2: 16px;
+  --font-size-3: 18px;
+  --font-size-4: 20px;
+  --font-size-5: 24px;
+  --font-size-6: 32px;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 560;
+}
+
+html {
+  --foreground: var(--light-foreground);
+  --background: var(--light-background);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --secondary-muted: var(--light-secondary-muted);
+  --muted: var(--light-muted);
+  --border: var(--light-border);
+  /* Main Colors */
+  --info-bg: var(--light-info-bg);
+  --info-text: var(--light-info-text);
+  --warning-bg: var(--light-warning-bg);
+  --warning-text: var(--light-warning-text);
+  --danger-bg: var(--light-danger-bg);
+  --danger-text: var(--light-danger-text);
+}
+
+html.dark {
+  --foreground: var(--dark-foreground);
+  --background: var(--dark-background);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --secondary-muted: var(--dark-secondary-muted);
+  --muted: var(--dark-muted);
+  --border: var(--dark-border);
+  /* Main colors */
+  --info-bg: var(--dark-info-bg);
+  --info-text: var(--dark-info-text);
+  --warning-bg: var(--dark-warning-bg);
+  --warning-text: var(--dark-warning-text);
+  --danger-bg: var(--dark-danger-bg);
+  --danger-text: var(--dark-danger-text);
+}
+
+html.light ::-moz-selection {
+  color: var(--light-primary);
+  background: var(--light-background);
+}
+
+html.light ::selection {
+  color: var(--light-primary);
+  background: var(--light-background);
+}
+
+html.dark ::-moz-selection {
+  color: var(--secondary);
+  background: var(--secondary-muted);
+}
+
+html.dark ::selection {
+  color: var(--secondary);
+  background: var(--secondary-muted);
+}
+
 @layer base {
-  :root {
-    --color-primary: #ffc0cb;
-    --color-secondary: #a020f0;
-
-    --color-more-purple: #8975f0;
-    --color-less-purple: #cdb4eb;
-    --color-cyan: #4cc4e6;
-  }
-
   html {
     scroll-behavior: smooth;
   }
@@ -88,15 +201,15 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply w-full rounded-[8px] px-[16px] py-[7px] text-center text-[16px] font-semibold leading-[1.3em] tracking-[-0.1px] duration-200 md:w-fit;
+    @apply w-full rounded-[8px] px-[16px] py-[7px] text-center text-[16px] font-semibold leading-[1.3em] tracking-[-0.1px] duration-300 after:rounded-[8px] hover:bg-opacity-80 active:translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-20 md:w-fit;
   }
 
   .btn_primary {
-    @apply btn bg-black text-white hover:opacity-70;
+    @apply btn bg-primary text-white dark:bg-secondary dark:text-black;
   }
 
   .btn_ghost {
-    @apply btn bg-gray-100 text-black py-[9px] hover:bg-gray-200/70;
+    @apply btn bg-background text-primary dark:bg-secondary-muted dark:text-secondary;
   }
 
   .btn_link {
@@ -104,7 +217,7 @@
   }
 
   .btn_transparent {
-    @apply btn bg-gray-50 hover:bg-gray-200/70 font-semibold text-black;
+    @apply btn bg-gray-50 font-semibold text-black hover:bg-gray-200/70;
   }
 
   .tag {

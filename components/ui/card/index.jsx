@@ -18,16 +18,14 @@ const Card = (props) => {
 
   const tagColors = tag === cardTag ? `${colors.tagColors}` : '';
 
-  const borderAndShadowColor = tag === cardTag ? `${colors.borderColor}` : '';
-
   return (
     <div
       key={index}
-      className={`group w-full space-y-3 overflow-x-hidden rounded-xl border-2 ${borderAndShadowColor} p-3 transition-all duration-300 hover:-translate-y-1  hover:shadow-lg md:p-4 lg:p-5`}
+      className={`group w-full space-y-3 overflow-x-hidden rounded-xl border-2 border-border bg-transparent p-3 shadow transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-4 lg:p-5`}
     >
       <div className="flex items-center justify-between">
         <div className="flex h-16 w-full items-center">
-          <div className="rounded-xl bg-slate-50 p-1">
+          <div className="rounded-xl bg-slate-50 p-1 dark:bg-transparent">
             <Image
               src={image}
               className="rounded-lg"
@@ -37,7 +35,7 @@ const Card = (props) => {
               alt=""
             />
           </div>
-          <h4 className="ml-2 w-full text-lg font-semibold text-gray-700 md:ml-3 md:text-xl">
+          <h4 className="ml-2 w-full text-lg font-semibold text-primary md:ml-3 md:text-xl">
             {name}
           </h4>
         </div>
@@ -58,15 +56,15 @@ const Card = (props) => {
           )}
         </div>
       </div>
-      <div className="space-y-2">
-        <h1 className="text-lg font-bold leading-relaxed text-gray-800 line-clamp-2 md:text-lg">
+      <div className="space-y-3">
+        <p className="text-base text-muted line-clamp-2 md:text-base !leading-tight">
           {description}
-        </h1>
+        </p>
         <div className="flex items-center space-x-2">
           {hashtags.map((hashtag, index) => (
             <span
               key={index}
-              className={`items-center rounded-lg border-2 border-slate-300 px-3 py-0.5 text-sm font-normal ${colorVariants[tagColors]}`}
+              className={`text-[13px flex w-fit select-none items-center whitespace-nowrap rounded-[8px] bg-background px-2 py-1 text-center font-semibold leading-[1.3em] tracking-[-0.1px] text-primary duration-300 hover:bg-opacity-95 active:translate-y-0.5 md:w-fit`}
             >
               #{hashtag}
             </span>
@@ -78,11 +76,11 @@ const Card = (props) => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full rounded-xl border-2 border-gray-300 bg-white py-2 px-8 text-center text-lg font-semibold text-gray-800 duration-200 hover:border-gray-600"
+          className="btn btn_primary w-full"
         >
           Go to Page
         </a>
-        <button className="flex w-fit items-center space-x-2 rounded-xl bg-gray-800 py-2 px-4 font-semibold text-white duration-200 hover:bg-gray-900">
+        <button className="btn btn_ghost flex w-fit items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -25,7 +25,7 @@ export const menus = [
     id: 0,
     title: 'All',
     icon: <All />,
-    color: '#007acc',
+    color: '',
   },
   {
     id: 1,
@@ -145,6 +145,6 @@ export const menus = [
     id: 19,
     title: 'Videos',
     icon: <Videos />,
-    color: '',
+    color: '#007acc',
   },
 ];

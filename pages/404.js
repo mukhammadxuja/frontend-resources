@@ -6,10 +6,11 @@ function PageNotFound() {
   const handleGoBack = () => {
     window.history.back();
   };
+  // bg-[url('https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg')]
   return (
-    <header className="container mx-auto h-screen bg-[url('https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg')] pb-[48px] !pt-[calc(5rem_+_48px)]">
-      <p className="text-sm font-normal text-gray-500">404 – Page not found</p>
-      <h1 className="py-[24px] text-[2.25rem] font-bold leading-[2.5rem] tracking-[-.025em] text-[#0f172a]">
+    <header className="container mx-auto h-screen bg-foreground pb-[48px] !pt-[calc(5rem_+_48px)]">
+      <p className="text-sm font-normal text-muted"> 404 - Page Not Found.</p>
+      <h1 className="py-[24px] text-[2.25rem] font-bold leading-[2.5rem] tracking-[-.025em] text-primary">
         The page you are looking for <br /> doesn't exist or has been moved.
       </h1>
       <div className="flex flex-col items-center gap-2 md:flex-row">

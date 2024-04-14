@@ -15,9 +15,11 @@ function Search({ search, setSearch }) {
       <div
         className={`z-[1000] flex w-full flex-col items-center gap-2 md:flex-row ${
           search ? 'rounded-t-lg' : 'rounded-lg'
-        } bg-white p-2`}
+        } bg-background p-2`}
       >
-        <div className={`flex w-full items-center rounded-lg bg-gray-100 pl-3`}>
+        <div
+          className={`flex w-full items-center rounded-lg bg-foreground pl-3`}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -33,16 +35,18 @@ function Search({ search, setSearch }) {
 
           <input
             onClick={() => setSearch(true)}
-            className="w-full rounded-lg bg-transparent py-3 px-2 outline-none placeholder:text-lg"
+            className="w-full rounded-lg bg-transparent py-3 px-2 outline-none placeholder:text-lg placeholder:text-muted"
             type="search"
             placeholder='Try searching "Onboarding"'
           />
         </div>
-        <div className="flex w-fit items-center rounded-lg bg-gray-100 p-1">
+        <div className="flex w-fit items-center rounded-lg bg-foreground p-1">
           <Link href="/">
             <button
               className={`${
-                pathname === '/' ? 'bg-white' : 'bg-gray-100'
+                pathname === '/'
+                  ? 'bg-background'
+                  : 'bg-transparent text-primary'
               } btn flex items-center gap-x-1.5 py-2 duration-300 hover:opacity-80`}
             >
               <svg
@@ -110,8 +114,10 @@ function Search({ search, setSearch }) {
           <Link href="/jobs">
             <button
               className={`${
-                pathname === '/jobs' ? 'bg-white' : 'bg-gray-100'
-              } btn flex items-center gap-x-1.5 bg-white py-2 duration-300 hover:opacity-80`}
+                pathname === '/jobs'
+                  ? 'bg-background'
+                  : 'bg-transparent text-primary'
+              } btn flex items-center gap-x-1.5 py-2 duration-300 hover:opacity-80`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,9 +140,9 @@ function Search({ search, setSearch }) {
       </div>
       {search && (
         <div
-          className={`absolute md:grid h-[80vh] w-full md:grid-cols-5 rounded-b-xl bg-white px-3 md:py-4 shadow-md`}
+          className={`absolute h-[80vh] w-full rounded-b-xl bg-background px-3 shadow-md md:grid md:grid-cols-5 md:py-4`}
         >
-          <ul className="flex flow-row md:flex-col items-center md:items-start space-y-2">
+          <ul className="flow-row flex items-center space-y-2 md:flex-col md:items-start">
             <SearchList
               title="Performance"
               tag="performance"
@@ -147,7 +153,7 @@ function Search({ search, setSearch }) {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-5 w-5 text-gray-600"
+                className="h-5 w-5 text-muted"
               >
                 <path
                   fillRule="evenodd"
@@ -167,7 +173,7 @@ function Search({ search, setSearch }) {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-5 w-5 text-gray-600"
+                className="h-5 w-5 text-muted"
               >
                 <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
               </svg>
@@ -182,7 +188,7 @@ function Search({ search, setSearch }) {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-5 w-5 text-gray-600"
+                className="h-5 w-5 text-muted"
               >
                 <path
                   fillRule="evenodd"
@@ -196,7 +202,7 @@ function Search({ search, setSearch }) {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="h-5 w-5 text-gray-600"
+                className="h-5 w-5 text-muted"
               >
                 <path
                   fillRule="evenodd"

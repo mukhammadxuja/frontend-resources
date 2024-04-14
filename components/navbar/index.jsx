@@ -23,25 +23,32 @@ const Navbar = () => {
 
   return (
     <nav
-      style={
-        navBg
-          ? {
-              backgroundColor: 'rgba(45, 66, 233, 0.5)',
-              transitionDuration: '0.3s',
-              borderBottom: 'black',
-            }
-          : { transitionDuration: '0.3s' }
-      }
-      className="absolute top-0 z-[100] w-full bg-opacity-50 py-4 backdrop-blur-sm md:container md:fixed md:mx-auto md:py-4"
+      // style={
+      //   navBg
+      //     ? {
+      //         backgroundColor: 'var(--bg-background)',
+      //         transitionDuration: '0.3s',
+      //         borderBottom: 'black',
+      //       }
+      //     : { transitionDuration: '0.3s' }
+      // }
+      className="bg-foreground/90 absolute top-0 z-[100] w-full border-b border-border py-4 backdrop-blur-lg md:container md:mx-auto md:py-4"
     >
       <div className="flex w-full items-center space-x-4">
         <div className="flex items-center space-x-2 lg:space-x-3">
           <Link href="/">
-            <img
-              className="z-[100000] w-8 rotate-90 cursor-pointer duration-300 hover:opacity-60 md:w-10"
-              src="/logo.svg"
-              alt=""
-            />
+            <span>
+              <img
+                className="z-[100000] block w-8 rotate-90 cursor-pointer duration-300 hover:opacity-60 dark:hidden md:w-10"
+                src="/logo-light.svg"
+                alt=""
+              />
+              <img
+                className="z-[100000] hidden w-8 rotate-90 cursor-pointer duration-300 hover:opacity-60 dark:block md:w-10"
+                src="/logo-dark.svg"
+                alt=""
+              />
+            </span>
           </Link>
         </div>
 
