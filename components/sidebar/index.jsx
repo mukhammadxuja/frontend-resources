@@ -14,7 +14,7 @@ import { FaReact, FaVuejs } from 'react-icons/fa';
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { TfiLightBulb } from 'react-icons/tfi';
 
-import { useCardContext } from 'context/cardContext';
+import { useMainContext } from 'context/MainContext';
 import SubMenu from './SubMenu';
 import { menus } from 'data/menus';
 
@@ -35,7 +35,7 @@ const icons = [
 
 const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(0);
-  const { setCardTag, cardTag, colorVariants } = useCardContext();
+  const { setCardTag, cardTag, colorVariants } = useMainContext();
   console.log();
 
   const handleClick = (menuId, tag) => {

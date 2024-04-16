@@ -1,14 +1,14 @@
 import { RoundedButton } from 'components';
-import { useCardContext } from 'context/cardContext';
+import { useMainContext } from 'context/MainContext';
 
 import { menus } from 'data/menus';
 
 const Menu = () => {
-  const { setCardTag } = useCardContext();
+  const { setCardTag } = useMainContext();
 
   return (
     <div className="container relative mx-auto">
-      <div className="flex w-full items-center space-x-2 sm:max-w-7xl md:mx-auto md:py-16 md:flex-wrap md:justify-center">
+      <div className="flex w-full items-center space-x-2 sm:max-w-7xl md:mx-auto md:flex-wrap md:justify-center md:py-16">
         {menus.map((menu, index) => (
           <div key={index}>
             <RoundedButton

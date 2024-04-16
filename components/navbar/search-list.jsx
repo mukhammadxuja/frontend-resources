@@ -4,14 +4,14 @@ function SearchList({ title, tag, menu, setMenu, children }) {
   return (
     <li
       onClick={() => setMenu(tag)}
-      className={`flex w-full cursor-pointer items-center justify-between rounded-lg border border-transparent px-3 py-2 duration-300 hover:bg-foreground hover:opacity-80 ${
-        menu === tag && 'border-border bg-foreground'
+      className={`flex w-full cursor-pointer items-center justify-between rounded-lg border border-transparent px-3 py-2 duration-300 hover:bg-border ${
+        menu === tag && 'border-border bg-background'
       }`}
     >
       <div className="flex items-center gap-x-1.5 text-muted">
         {children}
 
-        <span className="text-lg">{title}</span>
+        <span className="text-lg text-primary">{title}</span>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

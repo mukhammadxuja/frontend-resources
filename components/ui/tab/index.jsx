@@ -1,8 +1,8 @@
-import { useCardContext } from 'context/cardContext';
+import { useMainContext } from 'context/MainContext';
 import React, { useEffect, useRef, useState } from 'react';
 
 function Tab({ data }) {
-  const { setCardTag, cardTag, colorVariants } = useCardContext();
+  const { setCardTag, cardTag, colorVariants } = useMainContext();
 
   const tabsRef = useRef([]);
   const [activeTabIndex, setActiveTabIndex] = useState(0);

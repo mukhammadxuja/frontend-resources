@@ -1,22 +1,7 @@
 import Image from 'next/image';
-import { useCardContext } from 'context/cardContext';
 
 const Card = (props) => {
-  const {
-    image,
-    name,
-    tag,
-    description,
-    link,
-    colors,
-    hashtags,
-    trend,
-    index,
-  } = props;
-  const { cardTag, colorVariants } = useCardContext();
-  console.log(name);
-
-  const tagColors = tag === cardTag ? `${colors.tagColors}` : '';
+  const { image, name, description, link, hashtags, trend, index } = props;
 
   return (
     <div
@@ -57,8 +42,8 @@ const Card = (props) => {
         </div>
       </div>
       <div className="space-y-3">
-        <p className="text-base text-muted line-clamp-2 md:text-base !leading-tight">
-          {description}
+        <p className="text-base !leading-tight text-muted line-clamp-2 md:text-base">
+          {description} <span className="cursor-pointer underline">more</span>
         </p>
         <div className="flex items-center space-x-2">
           {hashtags.map((hashtag, index) => (

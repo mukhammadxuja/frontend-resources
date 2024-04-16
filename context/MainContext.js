@@ -1,14 +1,16 @@
 import { createContext, useContext, useState } from 'react';
 
-const CardContext = createContext({});
+const MainContext = createContext({});
 
-export const useCardContext = () => {
-  return useContext(CardContext);
+export const useMainContext = () => {
+  return useContext(MainContext);
 };
 
-export const CardContextProvider = ({ children }) => {
+export const MainContextProvider = ({ children }) => {
   const [cardTag, setCardTag] = useState('All');
   const [hashTag, setHashTag] = useState('');
+  const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState(false);
   const [like, setLike] = useState(false);
 
   const colorVariants = {
@@ -41,6 +43,10 @@ export const CardContextProvider = ({ children }) => {
   const contextValue = {
     cardTag,
     hashTag,
+    open,
+    setOpen,
+    search,
+    setSearch,
     like,
     setHashTag,
     setLike,
@@ -49,6 +55,6 @@ export const CardContextProvider = ({ children }) => {
   };
 
   return (
-    <CardContext.Provider value={contextValue}>{children}</CardContext.Provider>
+    <MainContext.Provider value={contextValue}>{children}</MainContext.Provider>
   );
 };

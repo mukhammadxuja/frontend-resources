@@ -1,39 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import Search from './search';
 import Menu from './menu';
+import { useMainContext } from 'context/MainContext';
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const [search, setSearch] = useState(false);
-  const [navBg, setNavBg] = useState(false);
-
-  const changeNavBg = () => {
-    window.scrollY >= 300 ? setNavBg(true) : setNavBg(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeNavBg);
-    return () => {
-      window.removeEventListener('scroll', changeNavBg);
-    };
-  }, []);
+  const { search, setSearch, open, setOpen } = useMainContext();
 
   return (
-    <nav
-      // style={
-      //   navBg
-      //     ? {
-      //         backgroundColor: 'var(--bg-background)',
-      //         transitionDuration: '0.3s',
-      //         borderBottom: 'black',
-      //       }
-      //     : { transitionDuration: '0.3s' }
-      // }
-      className="bg-foreground/90 absolute top-0 z-[100] w-full border-b border-border py-4 backdrop-blur-lg md:container md:mx-auto md:py-4"
-    >
+    <nav className="bg-foreground/90 absolute top-0 left-0 right-0 z-[100] w-full border-b border-border py-4 backdrop-blur-lg md:container md:mx-auto md:py-4">
       <div className="flex w-full items-center space-x-4">
         <div className="flex items-center space-x-2 lg:space-x-3">
           <Link href="/">
@@ -52,21 +27,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {search && (
-          <div
-            onClick={() => setSearch((prev) => !prev)}
-            className="before:fixed before:top-0 before:left-0 before:z-0 before:h-screen before:w-full before:bg-black before:bg-opacity-30 before:backdrop-blur-lg"
-          />
-        )}
-
         <Search search={search} setSearch={setSearch} />
-
-        {open && (
-          <div
-            onClick={() => setOpen((prev) => !prev)}
-            className="before:fixed before:top-0 before:left-0 before:z-0 before:h-screen before:w-full before:bg-black before:bg-opacity-30 before:backdrop-blur-lg"
-          />
-        )}
 
         <Menu open={open} setOpen={setOpen} />
       </div>
