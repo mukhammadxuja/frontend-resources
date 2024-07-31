@@ -4,15 +4,18 @@ import { MainContextProvider } from 'context/MainContext';
 
 import 'styles/globals.css';
 import Layout from 'components/layout';
+import { ApiContextProvider } from 'context/ApiContext';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider defaultTheme="light" enableSystem={true} attribute="class">
-      <MainContextProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </MainContextProvider>
+      <ApiContextProvider>
+        <MainContextProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </MainContextProvider>
+      </ApiContextProvider>
     </ThemeProvider>
   );
 }

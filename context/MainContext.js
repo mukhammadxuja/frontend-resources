@@ -12,6 +12,7 @@ export const MainContextProvider = ({ children }) => {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState(false);
   const [like, setLike] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
 
   const colorVariants = {
     green: 'bg-green-100 hover:!bg-green-200/50 text-green-500',
@@ -45,6 +46,8 @@ export const MainContextProvider = ({ children }) => {
     hashTag,
     open,
     setOpen,
+    openDialog,
+    setOpenDialog,
     search,
     setSearch,
     like,

@@ -1,6 +1,8 @@
+import { useMainContext } from 'context/MainContext';
 import Link from 'next/link';
 
 const Header = () => {
+  const { openDialog, setOpenDialog } = useMainContext();
   // bg-[url('https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg')]
   return (
     <header className="bg-[url('https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg')] dark:bg-foreground dark:bg-[url('')]">
@@ -39,8 +41,7 @@ const Header = () => {
             </svg>
             <span>Github</span>
           </a>
-          <Link href="/working-on">
-            <button className="btn btn_ghost group flex items-center gap-x-1.5">
+            <button onClick={() => setOpenDialog(true)} className="btn btn_ghost group flex items-center gap-x-1.5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -58,7 +59,6 @@ const Header = () => {
 
               <span>Submit</span>
             </button>
-          </Link>
         </div>
       </div>
     </header>
