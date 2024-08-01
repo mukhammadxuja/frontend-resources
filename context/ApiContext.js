@@ -19,6 +19,8 @@ export const ApiContext = createContext({});
 export const useApiContext = () => useContext(ApiContext);
 
 export const ApiContextProvider = ({ children }) => {
+  const [resources, setResources] = useState([]);
+
   // User
   const [userData, setUserData] = useState([]);
   const [user, setUser] = useState(null);
@@ -125,6 +127,8 @@ export const ApiContextProvider = ({ children }) => {
 
     // settings
     settings,
+
+    resources, setResources
   };
 
   return <ApiContext.Provider value={values}>{children}</ApiContext.Provider>;

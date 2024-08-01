@@ -26,8 +26,9 @@ const Card = (props) => {
         </div>
       </div>
       <div className="space-y-3">
-        <p className="text-base !leading-tight text-muted line-clamp-2 md:text-base">
-          {description} <span className="cursor-pointer underline">more</span>
+        <p className="text-base !leading-tight text-muted line-clamp-2 md:text-base mb-5">
+          {description}
+          {/* <span className="cursor-pointer underline">more</span> */}
         </p>
         <div className="flex items-center space-x-2">
           {hashtags.map((hashtag, index) => (

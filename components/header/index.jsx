@@ -1,14 +1,18 @@
+import { useApiContext } from 'context/ApiContext';
 import { useMainContext } from 'context/MainContext';
-import Link from 'next/link';
 
 const Header = () => {
-  const { openDialog, setOpenDialog } = useMainContext();
+  const { setOpenDialog } = useMainContext();
+  const { resources } = useApiContext();
+
   // bg-[url('https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg')]
   return (
     <header className="bg-[url('https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg')] dark:bg-foreground dark:bg-[url('')]">
       <div className="container mx-auto pb-[48px] !pt-[calc(5rem_+_48px)]">
         <div className="flex items-center space-x-3">
-          <p className="text-sm font-normal text-muted">288 resource</p>
+          <p className="text-sm font-normal text-muted">
+            {resources.length} resource
+          </p>
           <svg
             viewBox="0 0 2 2"
             aria-hidden="true"
@@ -41,24 +45,27 @@ const Header = () => {
             </svg>
             <span>Github</span>
           </a>
-            <button onClick={() => setOpenDialog(true)} className="btn btn_ghost group flex items-center gap-x-1.5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-4 w-4 duration-300 group-hover:-rotate-45"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                />
-              </svg>
+          <button
+            onClick={() => setOpenDialog(true)}
+            className="btn btn_ghost group flex items-center gap-x-1.5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="h-4 w-4 duration-300 group-hover:-rotate-45"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+              />
+            </svg>
 
-              <span>Submit</span>
-            </button>
+            <span>Submit</span>
+          </button>
         </div>
       </div>
     </header>

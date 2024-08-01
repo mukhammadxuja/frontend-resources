@@ -1,13 +1,22 @@
 // Cards.js
 import React, { useState, useEffect } from 'react';
-import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
+import {
+  collection,
+  getDocs,
+  updateDoc,
+  doc,
+  query,
+  orderBy,
+} from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useMainContext } from 'context/MainContext';
 import { Card } from 'components';
+import { useApiContext } from 'context/ApiContext';
 
 const Cards = () => {
   const { cardTag } = useMainContext();
-  const [resources, setResources] = useState([]);
+
+  const { resources, setResources } = useApiContext();
   const [loading, setLoading] = useState(true);
   const [cache, setCache] = useState([]);
 
@@ -15,11 +24,13 @@ const Cards = () => {
     const fetchResources = async () => {
       setLoading(true);
       try {
-        // Fetch data only if cache is empty
         if (cache.length === 0) {
-          const querySnapshot = await getDocs(
-            collection(db, 'resources/All/items')
+          // Query to fetch documents ordered by date (ascending)
+          const q = query(
+            collection(db, 'resources/All/items'),
+            orderBy('date', 'asc') // 'asc' for oldest first, 'desc' for newest first
           );
+          const querySnapshot = await getDocs(q);
           const resourcesData = querySnapshot.docs.map((doc) => ({
             id: doc.id,
             ...doc.data(),

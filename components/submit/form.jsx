@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, updateDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { useDropzone } from 'react-dropzone';
 import { db, storage } from '../../firebase/config';
@@ -33,6 +33,8 @@ const AddResource = () => {
     maxFiles: 1,
   });
 
+  console.log(Date.now());
+
   const onSubmit = async (data) => {
     try {
       let imageUrl = '';
@@ -46,15 +48,20 @@ const AddResource = () => {
 
       const dataTab = data.tab.toLowerCase();
 
-      await addDoc(collection(db, `resources/All/items`), {
+      const docRef = await addDoc(collection(db, `resources/All/items`), {
         ...data,
         image: imageUrl,
         hashtags: [
           dataTab,
           ...data.hashtags.split(',').map((tag) => tag.trim()),
         ],
+        date: Date.now(),
         likes: 0,
-        show: false,
+        show: true,
+      });
+
+      await updateDoc(docRef, {
+        id: docRef.id,
       });
 
       alert('Resource added successfully!');
@@ -139,7 +146,7 @@ const AddResource = () => {
         <input
           className="input"
           placeholder="Hashtags"
-          {...register('hashtags', { required: 'Hashtags are required' })}
+          {...register('hashtags')}
         />
         {errors.hashtags && (
           <p className="text-xs text-red-500">{errors.hashtags.message}</p>
