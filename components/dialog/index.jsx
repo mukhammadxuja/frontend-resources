@@ -1,3 +1,4 @@
+import AddResource from '@components/submit/form';
 import { useMainContext } from 'context/MainContext';
 import React from 'react';
 
@@ -13,7 +14,9 @@ function Dialog({ children }) {
 
       <div
         className={`absolute top-1/2 left-1/2 z-[102] h-fit w-[30rem] -translate-y-1/2 -translate-x-1/2 rounded-lg bg-white p-4 duration-300 ${
-          openDialog ? 'visible scale-100 opacity-100' : 'invisible scale-95 opacity-0'
+          openDialog
+            ? 'visible scale-100 opacity-100'
+            : 'invisible scale-95 opacity-0'
         }`}
       >
         <svg
@@ -31,9 +34,8 @@ function Dialog({ children }) {
             d="M6 18 18 6M6 6l12 12"
           />
         </svg>
-        Privet
+        {children}
       </div>
-      {children}
     </div>
   );
 }

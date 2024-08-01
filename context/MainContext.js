@@ -14,6 +14,8 @@ export const MainContextProvider = ({ children }) => {
   const [like, setLike] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
 
+
+
   const colorVariants = {
     green: 'bg-green-100 hover:!bg-green-200/50 text-green-500',
     red: 'bg-rose-500 hover:!bg-rose-600 focus:!bg-rose-500  border !border-rose-500 focus:!text-white text-white hover:!text-white',

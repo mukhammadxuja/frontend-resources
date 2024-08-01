@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 
-import { Header, Card } from 'components';
+import { Header, Card, Cards } from 'components';
 import Tab from '@components/ui/tab';
 import { data } from 'data/index';
 import { menus } from 'data/menu2';
 import { useMainContext } from 'context/MainContext';
 import Dialog from '@components/dialog';
+import AddResource from '@components/submit/form';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { cardTag } = useMainContext();
+
+  console.log();
 
   const filteredCards =
     cardTag === 'All'
@@ -30,7 +33,10 @@ export default function Home() {
 
       <Header />
 
-      <Dialog />
+      <Dialog>
+        <AddResource />
+      </Dialog>
+
       {/* md:top-[calc(6rem_-_1px)] */}
       <nav className="bg-foreground/90 container sticky -top-1 z-50 mx-auto h-full  overflow-x-scroll py-2 backdrop-blur-lg md:py-4">
         <ul className="flex flex-nowrap items-center gap-x-2">
@@ -38,15 +44,7 @@ export default function Home() {
         </ul>
       </nav>
 
-      <main className="container mx-auto mt-16 flex gap-10">
-        <div className="">
-          <div className="grid grid-cols-1 justify-items-center gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {filteredCards.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
-          </div>
-        </div>
-      </main>
+      <Cards filteredCards={filteredCards} />
     </div>
   );
 }
