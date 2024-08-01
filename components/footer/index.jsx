@@ -28,11 +28,11 @@ const Footer = () => {
             Made by
             <a
               className="link mx-1 text-muted"
-              href="https://mukhammadjohn.vercel.app"
+              href="https://anvarov.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Anvarov M
+              Anvarov
             </a>
           </span>
         </p>
