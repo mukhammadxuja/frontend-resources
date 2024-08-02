@@ -87,7 +87,7 @@ const Cards = () => {
     <main className="container mx-auto mt-16 flex gap-10">
       <div className="grid grid-cols-1 justify-items-center gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
         {filteredCards.map((card) => (
-          <Card key={card.id} {...card} onLikeToggle={handleLikeToggle} />
+          <Card key={card.id} {...card} onLikeToggle={handleLikeToggle} cardTag={cardTag} />
         ))}
       </div>
     </main>
