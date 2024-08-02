@@ -31,7 +31,7 @@ const Card = (props) => {
           {/* <span className="cursor-pointer underline">more</span> */}
         </p>
         <div className="flex items-center space-x-2">
-          {hashtags.map((hashtag, index) => (
+          {hashtags.slice(0, 1).map((hashtag, index) => (
             <span
               key={index}
               className={`text-[13px flex w-fit select-none items-center whitespace-nowrap rounded-[8px] bg-background px-2 py-1 text-center font-semibold leading-[1.3em] tracking-[-0.1px] text-primary duration-300 hover:bg-opacity-95 active:translate-y-0.5 md:w-fit`}

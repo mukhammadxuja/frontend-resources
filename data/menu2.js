@@ -29,6 +29,12 @@ export const menus = [
   },
   {
     id: 1,
+    title: 'Tools',
+    icon: <Api />,
+    color: '',
+  },
+  {
+    id: 3,
     title: 'Accessibility',
     icon: <Accessibility />,
     color: '',
@@ -39,25 +45,18 @@ export const menus = [
     icon: <Books />,
     color: '',
   },
-
-  {
-    id: 3,
-    title: 'API',
-    icon: <Api />,
-    color: '',
-  },
   {
     id: 4,
     title: 'Blogs',
     icon: <Blog />,
     color: '',
   },
-  {
-    id: 5,
-    title: 'News',
-    icon: <News />,
-    color: '',
-  },
+  // {
+  //   id: 5,
+  //   title: 'News',
+  //   icon: <News />,
+  //   color: '',
+  // },
   {
     id: 6,
     title: 'Podcast',
@@ -69,12 +68,12 @@ export const menus = [
     icon: <Challenges />,
     color: '',
   },
-  {
-    id: 8,
-    title: 'Courses',
-    icon: <Courses />,
-    color: '',
-  },
+  // {
+  //   id: 8,
+  //   title: 'Courses',
+  //   icon: <Courses />,
+  //   color: '',
+  // },
   {
     id: 9,
     title: 'Learning',
@@ -83,7 +82,7 @@ export const menus = [
   },
   {
     id: 10,
-    title: 'Tools',
+    title: 'Design Tools',
     icon: <Tools />,
     color: '',
   },
@@ -117,12 +116,12 @@ export const menus = [
     icon: <Inspiration />,
     color: '',
   },
-  {
-    id: 15,
-    title: 'Mockups',
-    icon: <Mockups />,
-    color: '',
-  },
+  // {
+  //   id: 15,
+  //   title: 'Mockups',
+  //   icon: <Mockups />,
+  //   color: '',
+  // },
   {
     id: 16,
     title: 'Icons',
@@ -141,10 +140,10 @@ export const menus = [
     icon: <Photos />,
     color: '',
   },
-  {
-    id: 19,
-    title: 'Videos',
-    icon: <Videos />,
-    color: '#007acc',
-  },
+  // {
+  //   id: 19,
+  //   title: 'Videos',
+  //   icon: <Videos />,
+  //   color: '#007acc',
+  // },
 ];

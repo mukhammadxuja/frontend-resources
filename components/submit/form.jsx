@@ -41,7 +41,7 @@ const AddResource = () => {
 
       // Upload image if a file is selected
       if (imageFile) {
-        const storageRef = ref(storage, `images/${imageFile.name}`);
+        const storageRef = ref(storage, `images/${data.tab}/${imageFile.name}`);
         await uploadBytes(storageRef, imageFile);
         imageUrl = await getDownloadURL(storageRef);
       }
@@ -73,7 +73,7 @@ const AddResource = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className='mt-5'>
       <div
         {...getRootProps()}
         className="w-full cursor-pointer rounded-lg border-2 border-dashed border-green-400 p-4"

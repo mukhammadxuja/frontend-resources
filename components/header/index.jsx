@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto pb-[48px] !pt-[calc(5rem_+_48px)]">
         <div className="flex items-center space-x-3">
           <p className="text-sm font-normal text-muted">
-            {resources.length} resource
+            {resources.length} resources
           </p>
           <svg
             viewBox="0 0 2 2"

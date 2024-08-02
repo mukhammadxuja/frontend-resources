@@ -98,10 +98,38 @@ export default Cards;
 
 const SkeletonCard = () => {
   return (
-    <div className="flex w-full animate-pulse flex-col items-center rounded-lg bg-gray-200 p-4">
-      <div className="mb-4 h-40 w-full rounded-md bg-gray-300"></div>
-      <div className="mb-2 h-4 w-3/4 rounded bg-gray-300"></div>
-      <div className="h-4 w-2/4 rounded bg-gray-300"></div>
+    <div
+      className={`group w-full space-y-3 overflow-x-hidden rounded-xl border-2 border-border bg-transparent p-3 shadow transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-4 lg:p-5`}
+    >
+      <div className="flex items-center justify-between">
+        <div className="flex h-16 w-full items-center">
+          <div className="rounded-xl bg-slate-50 p-1 dark:bg-transparent">
+            {/* Image skeleton */}
+            <div className="h-12 w-12 animate-pulse rounded-lg bg-gray-200"></div>
+          </div>
+          <h4 className="ml-2 w-full text-lg font-semibold text-primary md:ml-3 md:text-xl">
+            {/* Label skeleton */}
+            <div className="h-5 w-3/4 animate-pulse rounded bg-gray-200"></div>
+          </h4>
+        </div>
+      </div>
+      <div className="space-y-3">
+        <p className="mb-5 text-base !leading-tight text-muted line-clamp-2 md:text-base">
+          {/* Description skeleton */}
+          <div className="mb-2 h-4 w-full animate-pulse rounded bg-gray-200"></div>
+          <div className="h-4 w-5/6 animate-pulse rounded bg-gray-200"></div>
+        </p>
+        <div className="flex items-center space-x-2">
+          {/* Hashtags skeleton */}
+          <div className="h-6 w-1/4 animate-pulse rounded bg-gray-200"></div>
+          <div className="h-6 w-1/4 animate-pulse rounded bg-gray-200"></div>
+          <div className="h-6 w-1/4 animate-pulse rounded bg-gray-200"></div>
+        </div>
+      </div>
+      <div className="flex items-center space-x-2">
+        {/* Button skeleton */}
+        <div className="h-10 w-full animate-pulse rounded bg-gray-200"></div>
+      </div>
     </div>
   );
 };
