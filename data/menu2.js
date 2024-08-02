@@ -3,7 +3,7 @@ import { Blog } from '@components/svg/blog';
 import { Books } from '@components/svg/books';
 import { Inspiration } from '@components/svg/inspiration';
 import { Learning } from '@components/svg/learing';
-import { Mockups } from '@components/svg/mockups';
+import { Angular } from '@components/svg/angular';
 import { Photos } from '@components/svg/photos';
 import { Podcast } from '@components/svg/podcast';
 import { Tools } from '@components/svg/tools';
@@ -13,8 +13,8 @@ import { Typography } from '@components/svg/typography';
 import { Freelance } from '@components/svg/freelance';
 import { Jobs } from '@components/svg/jobs';
 import { All } from '@components/svg/all';
-import { News } from '@components/svg/news';
-import { Videos } from '@components/svg/videos';
+import { Vue } from '@components/svg/vue';
+import { React } from '@components/svg/react';
 import { Challenges } from '@components/svg/challenges';
 import { Courses } from '@components/svg/courses';
 import { Api } from '@components/svg/api';
@@ -35,8 +35,26 @@ export const menus = [
   },
   {
     id: 3,
-    title: 'Accessibility',
-    icon: <Accessibility />,
+    title: 'Styling',
+    icon: <DesignSystem />,
+    color: '',
+  },
+  {
+    id: 111,
+    title: 'React.js',
+    icon: <React />,
+    color: '',
+  },
+  {
+    id: 112,
+    title: 'Vue.js',
+    icon: <Vue />,
+    color: '',
+  },
+  {
+    id: 1121,
+    title: 'Angular',
+    icon: <Angular />,
     color: '',
   },
   {
@@ -58,6 +76,12 @@ export const menus = [
   //   color: '',
   // },
   {
+    id: 9,
+    title: 'Learning',
+    icon: <Learning />,
+    color: '',
+  },
+  {
     id: 6,
     title: 'Podcast',
     icon: <Podcast />,
@@ -74,12 +98,6 @@ export const menus = [
   //   icon: <Courses />,
   //   color: '',
   // },
-  {
-    id: 9,
-    title: 'Learning',
-    icon: <Learning />,
-    color: '',
-  },
   {
     id: 10,
     title: 'Design Tools',
@@ -104,12 +122,7 @@ export const menus = [
     icon: <Freelance />,
     color: '',
   },
-  {
-    id: 13,
-    title: 'Design Systems',
-    icon: <DesignSystem />,
-    color: '',
-  },
+
   {
     id: 14,
     title: 'Inspiration',
@@ -120,6 +133,12 @@ export const menus = [
   //   id: 15,
   //   title: 'Mockups',
   //   icon: <Mockups />,
+  //   color: '',
+  // },
+  // {
+  //   id: 13,
+  //   title: 'Design Systems',
+  //   icon: <DesignSystem />,
   //   color: '',
   // },
   {
