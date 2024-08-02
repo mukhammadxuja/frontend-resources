@@ -16,8 +16,9 @@ const Card = (props) => {
               className="rounded-lg"
               width={45}
               height={45}
-              layout="fixed"
-              alt=""
+              quality={90}
+              loading="lazy"
+              alt={`${label} card image`}
             />
           </div>
           <h4 className="ml-2 w-full text-lg font-semibold text-primary md:ml-3 md:text-xl">
@@ -26,7 +27,7 @@ const Card = (props) => {
         </div>
       </div>
       <div className="space-y-3">
-        <p className="text-base !leading-tight text-muted line-clamp-2 md:text-base mb-5">
+        <p className="mb-5 text-base !leading-tight text-muted line-clamp-2 md:text-base">
           {description}
           {/* <span className="cursor-pointer underline">more</span> */}
         </p>
