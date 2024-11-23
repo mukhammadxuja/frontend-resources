@@ -209,7 +209,7 @@ html.dark ::selection {
   }
 
   .btn_ghost {
-    @apply btn bg-background text-primary dark:bg-secondary-muted dark:text-secondary;
+    @apply btn border-2 hover:border-black text-primary dark:bg-secondary-muted dark:text-secondary;
   }
 
   .btn_link {

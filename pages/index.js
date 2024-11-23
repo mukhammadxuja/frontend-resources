@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 
-import { Header, Card, Cards } from 'components';
+import { Header, Cards } from 'components';
 import Tab from '@components/ui/tab';
 import { data } from 'data/index';
 import { menus } from 'data/menu2';
@@ -12,8 +12,6 @@ import AddResource from '@components/submit/form';
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { cardTag } = useMainContext();
-
-  console.log();
 
   const filteredCards =
     cardTag === 'All'
@@ -38,7 +36,7 @@ export default function Home() {
       </Dialog>
 
       {/* md:top-[calc(6rem_-_1px)] */}
-      <nav className="bg-foreground/90 container sticky -top-1 z-50 mx-auto h-full  overflow-x-scroll py-2 backdrop-blur-lg md:py-4">
+      <nav className="bg-foreground/90 container sticky -top-1 z-[10] mx-auto h-full overflow-x-scroll py-2 backdrop-blur-lg md:py-4">
         <ul className="flex flex-nowrap items-center gap-x-2">
           <Tab data={menus} />
         </ul>

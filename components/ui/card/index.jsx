@@ -13,7 +13,7 @@ const Card = (props) => {
           <div className="flex h-16 w-full items-center">
             <div className="rounded-xl bg-slate-50 p-1 dark:bg-transparent">
               <Image
-                src={image}
+                src={image || '/images/logo-light.svg'}
                 className="h-full w-full rounded-lg object-cover"
                 width={45}
                 height={45}

@@ -13,14 +13,14 @@ const Layout = ({ children }) => {
       {search && (
         <div
           onClick={() => setSearch((prev) => !prev)}
-          className="!z-[10000] before:fixed before:top-0 before:left-0 before:z-0 before:h-screen before:w-full before:bg-black before:bg-opacity-30 before:backdrop-blur-lg"
+          className="!z-[2] before:fixed before:top-0 before:left-0 before:z-0 before:h-screen before:w-full before:bg-black before:bg-opacity-30 before:backdrop-blur-lg"
         />
       )}
 
       {open && (
         <div
           onClick={() => setOpen((prev) => !prev)}
-          className="!z-[10000] before:fixed before:top-0 before:left-0 before:z-0 before:h-screen before:w-full before:bg-black before:bg-opacity-30 before:backdrop-blur-lg"
+          className="!z-[2] before:fixed before:top-0 before:left-0 before:z-0 before:h-screen before:w-full before:bg-black before:bg-opacity-30 before:backdrop-blur-lg"
         />
       )}
 

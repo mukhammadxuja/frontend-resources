@@ -1,4 +1,3 @@
-import AddResource from '@components/submit/form';
 import { useMainContext } from 'context/MainContext';
 import React from 'react';
 
@@ -7,10 +6,15 @@ function Dialog({ children }) {
   return (
     <div
       className={`fixed top-0 left-0 z-[100] h-screen w-full ${
-        openDialog ? 'block' : 'hidden'
+        openDialog
+          ? 'visible translate-y-0 opacity-100 duration-100'
+          : 'invisible translate-y-1.5 opacity-0 duration-100'
       }`}
     >
-      <div className="absolute z-[101] h-full w-full bg-black bg-opacity-50 backdrop-blur" />
+      <div
+        onClick={() => setOpenDialog(false)}
+        className="absolute z-[101] h-full w-full bg-black bg-opacity-50 backdrop-blur"
+      />
 
       <div
         className={`absolute top-1/2 left-1/2 z-[102] h-fit w-[30rem] -translate-y-1/2 -translate-x-1/2 rounded-lg bg-white p-4 duration-300 ${
